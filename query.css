@@ -1,0 +1,23 @@
+@media (max-width: 930px) {
+    header .navbar_container nav {
+        height: auto;
+        width: 100%;
+        padding: 1rem 0;
+        position: absolute;
+        top: 96px;
+        left: 0;
+        display: none;
+    }
+
+    header .navbar_container nav ul {
+        flex-direction: column;
+    }
+
+    header .navbar_container nav ul li:last-child {
+        padding: 0 1rem !important;
+    }
+
+    header .navbar_container .ham_menu {
+        display: flex;
+    }
+}
