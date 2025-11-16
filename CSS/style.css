@@ -4,6 +4,7 @@
     --red-color-lighter: #FE344E;
     --red-color: #B91F33;
     --red-color-shadow-01: rgba(185, 31, 51, 0.1);
+    --main-background: #242424;
 }
 
 * {
@@ -11,11 +12,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Anton', sans-serif;
-    background-color: black;
+}
+
+body {
+    background: url(../images/background-grain.png),
+                var(--main-background);
 }
 
 .box_glass_effect {
-    background: rgba(36, 36, 36, 0.4) !important;
+    background: rgba(36, 36, 36, 0.8) !important;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -76,15 +81,12 @@ header {
     justify-content: center;
     align-items: center;
     padding-right: 1rem;
-    background: transparent;
 }
 .navbar_container .header_logo a {
     height: 150%;
-    background: transparent;
 }
 .navbar_container .header_logo a img {
     height: 100%;
-    background: transparent;
 }
 
 .navbar_container .ham_menu {
@@ -93,7 +95,6 @@ header {
     flex-direction: column;
     gap: 5px;
     padding-left: 1rem;
-    background: transparent;
     cursor: pointer;
 }
 .navbar_container .ham_menu span {
@@ -110,12 +111,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
 }
 .navbar_container nav ul {
     display: flex;
     gap: 1rem;
-    background: transparent;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -125,14 +124,12 @@ header {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    background: transparent;
 }
 .navbar_container nav ul li:last-child {
     padding-right: 0 !important;
 }
 .navbar_container nav ul li a {
     text-decoration: none;
-    background: transparent;
     color: var(--white-color);
 }
 header .navbar_container nav ul li:last-child a {
