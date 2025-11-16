@@ -15,14 +15,42 @@
 }
 
 .box_glass_effect {
-    background: rgba(36, 36, 36, 0.4); /* průhledné pozadí */
-    backdrop-filter: blur(20px); /* rozmazání pozadí */
-    -webkit-backdrop-filter: blur(20px); /* Safari */
+    background: rgba(36, 36, 36, 0.4) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     box-shadow: 0 4px 20px var(--white-color-shadow-01);
 }
 
+.text_color_gradient {
+    background: linear-gradient(
+        to right,
+        var(--red-color-lighter) 0%,
+        var(--red-color-lighter) 70%,
+        var(--red-color) 70%,
+        var(--red-color) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.underline_color_gradient {
+    background: linear-gradient(
+        to right,
+        var(--red-color-lighter) 0%,
+        var(--red-color-lighter) 70%,
+        var(--red-color) 70%,
+        var(--red-color) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+
+/* ****
+    HEADER
+**** */
 header {
     height: 80px;
     width: 100vw;
@@ -32,7 +60,7 @@ header {
     top: 1rem;
 }
 
-header .navbar_container {
+.navbar_container {
     max-width: 1300px;
     width: 100%;
     height: 100%;
@@ -42,8 +70,7 @@ header .navbar_container {
     align-items: center;
     margin: 0 1rem;
 }   
-
-header .navbar_container .header_logo {
+.navbar_container .header_logo {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -51,15 +78,16 @@ header .navbar_container .header_logo {
     padding-right: 1rem;
     background: transparent;
 }
-header .navbar_container .header_logo a {
+.navbar_container .header_logo a {
     height: 150%;
     background: transparent;
 }
-header .navbar_container .header_logo a img {
+.navbar_container .header_logo a img {
     height: 100%;
     background: transparent;
 }
-header .navbar_container .ham_menu {
+
+.navbar_container .ham_menu {
     display: none;
     /* display: flex; */
     flex-direction: column;
@@ -68,28 +96,15 @@ header .navbar_container .ham_menu {
     background: transparent;
     cursor: pointer;
 }
-header .navbar_container .ham_menu span {
+.navbar_container .ham_menu span {
     display: block;
     height: 3px;
     width: 25px;
     background-color: var(--white-color);
     transition: all 0.5s;
 }
-.display_none_flex {
-    display: flex !important;
-}
-header .navbar_container .ham_menu.active > span:first-child{
-    transform: rotate(45deg) translate(6px, 4px);
-    transition: all 0.5s;
-}
-header .navbar_container .ham_menu.active > span:nth-child(2) {
-    opacity: 0;
-}
-header .navbar_container .ham_menu.active > span:last-child {
-    transform: rotate(-45deg) translate(7px, -5px);
-    transition: all 0.5s;
-}
-header .navbar_container nav {
+
+.navbar_container nav {
     height: 100%;
     padding-left: 1rem;
     display: flex;
@@ -97,30 +112,28 @@ header .navbar_container nav {
     justify-content: center;
     background: transparent;
 }
-header .navbar_container nav ul {
+.navbar_container nav ul {
     display: flex;
     gap: 1rem;
     background: transparent;
     font-size: 20px;
     text-transform: uppercase;
 }
-
-header .navbar_container nav ul li{
+.navbar_container nav ul li{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
     background: transparent;
-    
 }
-header .navbar_container nav ul li a {
+.navbar_container nav ul li:last-child {
+    padding-right: 0 !important;
+}
+.navbar_container nav ul li a {
     text-decoration: none;
     background: transparent;
     color: var(--white-color);
-}
-header .navbar_container nav ul li:last-child {
-    padding-right: 0 !important;
 }
 header .navbar_container nav ul li:last-child a {
     border: 1px solid var(--red-color);
@@ -129,4 +142,3 @@ header .navbar_container nav ul li:last-child a {
     box-shadow: inset -20px -20px 20px var(--red-color-shadow-01),
                 inset 20px 20px 20px var(--red-color-shadow-01);
 }
-
