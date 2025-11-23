@@ -1,0 +1,20 @@
+<header>
+    <div class="navbar_container box_glass_effect">
+        <div class="header_logo">
+            <a href="#"><img src="images/kluziste_v_centru_vetsi_logo.png" alt=""></a>
+        </div>
+        <div class="ham_menu hamMenuIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="mainNavMenu">
+            <ul>
+                <li><a href="">ceník</a></li>
+                <li><a href="">webkamera</a></li>
+                <li><a href="">rozpis ledu/provozní doba</a></li>
+                <li><a href="">rezervace</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

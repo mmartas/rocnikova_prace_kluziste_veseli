@@ -1,27 +1,4 @@
-@media (max-width: 1050px){
-    .text_map_section {
-        flex-wrap: wrap;
-    }
-
-    .text_map_section .left_section {
-        width: 50%;
-        align-items: start;
-    }
-
-    .text_map_section .middle_section {
-        width: 50%;
-    }
-
-    .text_map_section .right_section {
-        width: 100%;
-        margin-top: 1rem;
-    }
-}
-
 @media (max-width: 930px) {
-    /* ****
-        HEADER
-    **** */
     .navbar_container .ham_menu {
         display: flex;
     }
@@ -54,18 +31,5 @@
     }
     .navbar_container nav ul li:last-child {
         padding: 0 1rem !important;
-    }
-}
-
-@media (max-width: 750px){
-    .text_map_section {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .text_map_section .section {
-        width: 100%;
-        text-align: center;
-        align-items: center;
     }
 }
