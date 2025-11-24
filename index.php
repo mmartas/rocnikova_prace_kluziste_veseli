@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
+    
     <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="query/header-query.css">
+    <link rel="stylesheet" href="query/index-query.css">
     <link rel="stylesheet" href="query/footer-query.css">
     
     <title>Kluziště v centru | Veselí nad Moravou</title>
@@ -24,6 +27,22 @@
 <body>
     <?php require "assets/header.php"; ?>
     <main>
+        <div class="main_container">
+            <section class="introduction one_section">
+                <div class="text_section box_glass_effect">
+                    <h1><span class="underline_color_gradient">Přijďte</span> si zabruslit na<br><span class="underline_color_gradient">kluziště</span> ve<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
+                </div>
+                <div class="photo_group">
+                    <img src="images/title_background_dark_800.jpg" alt="">
+                    <!-- <img src="images/title_background_dark_800.jpg" alt="">
+                    <img src="images/title_background_dark_800.jpg" alt="">
+                    <img src="images/title_background_dark_800.jpg" alt="">
+                    <img src="images/title_background_dark_800.jpg" alt=""> -->
+                </div>
+            </section>
+
+            
+        </div>
         
     </main>
     <?php require "assets/footer.php"; ?>
