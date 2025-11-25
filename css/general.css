@@ -48,3 +48,15 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 7px;
 }
+
+.red_line {
+    background: linear-gradient(
+        to right,
+        var(--red-color-lighter) 60%,
+        var(--red-color) 100%
+    );
+    width: 500px;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+}

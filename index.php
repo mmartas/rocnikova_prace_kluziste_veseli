@@ -28,20 +28,43 @@
     <?php require "assets/header.php"; ?>
     <main>
         <div class="main_container">
-            <section class="introduction one_section">
+
+            <section class="introduction">
                 <div class="text_section box_glass_effect">
                     <h1><span class="underline_color_gradient">Přijďte</span> si zabruslit na<br><span class="underline_color_gradient">kluziště</span> ve<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
                 </div>
                 <div class="photo_group">
                     <img src="images/title_background_dark_800.jpg" alt="">
-                    <!-- <img src="images/title_background_dark_800.jpg" alt="">
-                    <img src="images/title_background_dark_800.jpg" alt="">
-                    <img src="images/title_background_dark_800.jpg" alt="">
-                    <img src="images/title_background_dark_800.jpg" alt=""> -->
                 </div>
             </section>
 
+            <span class="red_line"></span>
             
+            <section class="ice_rink one_container">
+                <h1 class="text_color_gradient">ledová plocha pro všechny</h1>
+                <section class="public_skating one_section">
+
+                </section>
+                <section class="rental_ice_rink one_section">
+
+                </section>
+                <section class="school_actions one_section">
+
+                </section>
+            </section>
+            
+            <section class="services one_container">
+                <h1 class="text_color_gradient">další služby</h1>
+                <section class="skate_sharping one_section">
+
+                </section>
+                <section class="skate_lend one_section">
+
+                </section>
+                <section class="food_service one_section">
+
+                </section>
+            </section>
         </div>
         
     </main>
