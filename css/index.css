@@ -10,42 +10,71 @@ main {
     width: calc(100% - 2rem);
     margin: 0 1rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 .main_container .introduction {
-    height: auto;
     margin-top: 80px;
+}
+.main_container .introduction .one_section .photo_group {
+    display: flex;
+    justify-content: flex-end;
+}
+.main_container .one_container .one_section{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: flex-end;
 }
-
-.main_container .introduction .text_section {
+.main_container .one_container .one_section .text_section {
     padding: 2rem 3rem;
-    display: inline-block;
     width: 66%;
     z-index: 10;
     text-align: center;
-    height: auto;
 }
-.main_container .introduction .text_section h1 {
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    display: inline-block;
+.main_container .one_container .one_section .text_section h1 {
     font-size: 60px;
     color: var(--white-color);
 }
 
-.main_container .introduction .photo_group {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main_container .one_container .one_section .photo_group {
     width: 34%;
-    margin-right: 180px;
-    
 }
 
-.main_container .introduction .photo_group img {
-    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+.main_container .one_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.main_container .one_container h1 {
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.main_container .one_container .rental_ice_rink .text_section {
+    order: 1;
+}
+.main_container .one_container .rental_ice_rink .photo_group {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_container .one_container .public_skating .text_section,
+.main_container .one_container .school_actions .text_section {
+    order: 2;
+}
+.main_container .one_container .public_skating .photo_group,
+.main_container .one_container .school_actions .photo_group {
+    order: 1;
+}
+
+.main_container .one_container .one_section .text_section h2 {
+    font-size: 40px;
+}
+.main_container .one_container .one_section .text_section p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white-color);
 }

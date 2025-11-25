@@ -36,6 +36,8 @@ body {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
 }
 
 .underline_color_gradient {
@@ -52,11 +54,25 @@ body {
 .red_line {
     background: linear-gradient(
         to right,
-        var(--red-color-lighter) 60%,
-        var(--red-color) 100%
+        transparent 0%,
+        var(--red-color-lighter) 40%,
+        var(--red-color) 80%,
+        transparent 100%
     );
-    width: 500px;
+    width: 70%;
     height: 5px;
     display: block;
     margin: 0 auto;
+}
+
+.right_photo_clip {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+}
+.left_photo_clip {
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+}
+
+.title {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
 }

@@ -29,27 +29,61 @@
     <main>
         <div class="main_container">
 
-            <section class="introduction">
-                <div class="text_section box_glass_effect">
-                    <h1><span class="underline_color_gradient">Přijďte</span> si zabruslit na<br><span class="underline_color_gradient">kluziště</span> ve<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
-                </div>
-                <div class="photo_group">
-                    <img src="images/title_background_dark_800.jpg" alt="">
-                </div>
+            <section class="introduction one_container">
+                <section class="one_section">
+                    <div class="text_section box_glass_effect">
+                        <h1 class="title"><span class="underline_color_gradient">Přijďte</span> si zabruslit na<br><span class="underline_color_gradient">kluziště</span> ve<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
+                    </div>
+                    <div class="photo_group">
+                        <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
+                    </div>
+                </section>
             </section>
 
             <span class="red_line"></span>
             
             <section class="ice_rink one_container">
+
                 <h1 class="text_color_gradient">ledová plocha pro všechny</h1>
                 <section class="public_skating one_section">
-
+                    <div class="text_section box_glass_effect">
+                        <div class="wrapper">
+                            <h2 class="text_color_gradient">bruslení pro veřejnost</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.</p>
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="photo_group">
+                        <img src="images/verejne-brusleni-napajedla_800.jpg" alt="" class="left_photo_clip">
+                    </div>
                 </section>
-                <section class="rental_ice_rink one_section">
 
+                <section class="rental_ice_rink one_section">
+                    <div class="text_section box_glass_effect">
+                        <div class="wrapper">
+                            <h2 class="text_color_gradient">pronájem ledové plochy</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="photo_group">
+                        <img src="images/pronajem-plochy-napajedla_800.jpg" alt="" class="right_photo_clip">
+                    </div>
                 </section>
                 <section class="school_actions one_section">
-
+                    <div class="text_section box_glass_effect">
+                        <div class="wrapper">
+                            <h2 class="text_color_gradient">školní akce</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.</p>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="photo_group">
+                        <img src="images/skolni-akce-napajedla_800.jpg" alt="" class="left_photo_clip">
+                    </div>
                 </section>
             </section>
             
