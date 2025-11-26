@@ -17,6 +17,7 @@
 body {
     background: url(../images/background-grain.png),
                 var(--main-background);
+    background-attachment: fixed;
 }
 
 .box_glass_effect {
@@ -36,8 +37,6 @@ body {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
 }
 
 .underline_color_gradient {
@@ -51,7 +50,7 @@ body {
     background-size: 100% 7px;
 }
 
-.red_line {
+.decoration_red_line {
     background: linear-gradient(
         to right,
         transparent 0%,
@@ -62,9 +61,12 @@ body {
     width: 70%;
     height: 5px;
     display: block;
-    margin: 0 auto;
 }
 
+.right_photo_clip, .left_photo_clip {
+    object-fit: cover;
+    object-position: center;
+}
 .right_photo_clip {
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
 }
@@ -75,4 +77,23 @@ body {
 .title {
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
+    color: var(--white-color);
+    display: inline-block;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white-color);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.one_section_left_side {
+    order: 1;
+}
+
+.one_section_right_side {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
 }
