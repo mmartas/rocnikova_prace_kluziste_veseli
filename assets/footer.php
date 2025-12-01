@@ -4,7 +4,7 @@
             <nav class="left_section section">
                 <ul>
                     <li>
-                        <a href=""><img src="../images/kluziste_v_centru_vetsi_logo.png" alt=""></a>
+                        <a href=""><img src="images/kluziste_v_centru_vetsi_logo.png" alt=""></a>
                     </li>
                     <li>
                         <a href="">Provozní řád</a>
@@ -32,7 +32,7 @@
                 </div>       
             </div>
             <div class="right_section section">
-                <iframe style="border:none" src="https://mapy.com/s/nufagekudu" height="333" frameborder="0"></iframe>
+                <iframe style="border:none" src="https://mapy.com/s/kacokepumo" height="333" frameborder="0"></iframe>
             </div>
         </section>
         <section class="copyright_section">

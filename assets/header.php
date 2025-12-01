@@ -13,7 +13,7 @@
                 <li><a href="">ceník</a></li>
                 <li><a href="">webkamera</a></li>
                 <li><a href="">rozpis ledu/provozní doba</a></li>
-                <li><a href="">rezervace</a></li>
+                <li><a href="" class="box_glass_effect_red">rezervace</a></li>
             </ul>
         </nav>
     </div>

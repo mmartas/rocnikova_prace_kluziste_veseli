@@ -5,7 +5,7 @@ footer {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     color: var(--white-color);
-    top: 15rem;
+    margin-top: 6rem;
 }
 
 .footer_container {

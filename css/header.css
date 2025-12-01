@@ -81,11 +81,8 @@ header {
     transition: all 0.3s;
 }
 .navbar_container nav ul li:last-child a {
-    border: 1px solid var(--red-color);
     border-radius: 10px;
     padding: 0.5rem 1rem;
-    box-shadow: inset -20px -20px 20px var(--red-color-shadow-01),
-                inset 20px 20px 20px var(--red-color-shadow-01);
 }
 .navbar_container nav ul li:last-child a:hover {
     background-color: var(--red-color);

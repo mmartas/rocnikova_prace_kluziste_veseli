@@ -29,6 +29,15 @@ body {
     box-shadow: 0 4px 20px var(--white-color-shadow-01);
 }
 
+.box_glass_effect_red {
+    background: rgba(36, 36, 36, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--red-color);
+    box-shadow: inset -20px -20px 20px var(--red-color-shadow-01),
+                inset 20px 20px 20px var(--red-color-shadow-01);
+}
+
 .text_color_gradient {
     background: linear-gradient(
         to right,
@@ -96,4 +105,23 @@ body {
     order: 2;
     display: flex;
     justify-content: flex-end;
+}
+
+#arrow_top_scroll {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 100%;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#arrow_top_scroll:hover {
+    background-color: var(--red-color);
+}
+
+.fa-solid.fa-angles-up {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--white-color);
 }
