@@ -28,9 +28,14 @@ header {
 }
 .navbar_container .header_logo a {
     height: 150%;
+    margin-bottom: 3px;
 }
 .navbar_container .header_logo a img {
     height: 100%;
+    transition: transform 0.3s ease;
+}
+.navbar_container .header_logo a img:hover {
+    transform: scale(1.025);
 }
 
 .navbar_container .ham_menu {
@@ -75,10 +80,10 @@ header {
 .navbar_container nav ul li a {
     text-decoration: none;
     color: var(--white-color);
+    transition: all 0.3s;
 }
 .navbar_container nav ul li a:hover {
     color: var(--red-color-lighter);
-    transition: all 0.3s;
 }
 .navbar_container nav ul li:last-child a {
     border-radius: 10px;
