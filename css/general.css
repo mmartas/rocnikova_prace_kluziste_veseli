@@ -7,6 +7,10 @@
     --main-background: #242424;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -114,7 +118,13 @@ body {
     border-radius: 100%;
     z-index: 999;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+#arrow_top_scroll.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 #arrow_top_scroll:hover {
     background-color: var(--red-color);

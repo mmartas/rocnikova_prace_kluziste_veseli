@@ -142,7 +142,7 @@
             <span class="decoration_red_line"></span>
         </div>
     </main>
-    <button hidden class="box_glass_effect_red" id="arrow_top_scroll"><i class="fa-solid fa-angles-up"></i></button>
+    <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
     <?php require "assets/footer.php"; ?>
     <script src="js/header.js"></script>
     <script src="js/general.js"></script>

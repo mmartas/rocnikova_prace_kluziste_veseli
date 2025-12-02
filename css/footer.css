@@ -6,6 +6,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     color: var(--white-color);
     margin-top: 6rem;
+    margin-bottom: 1rem;
 }
 
 .footer_container {
@@ -74,6 +75,23 @@ footer {
     font-size: 2.5rem;
     color: var(--white-color);
 }
+.footer_container .text_map_section .section .social_media_contact .fa-brands.fa-instagram {
+    background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45, #FFDC80);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    background-clip: text;
+    transition: background-position 1s ease, -webkit-text-fill-color 0.5s ease;
+    background-position: left bottom;
+}
+.footer_container .text_map_section .section .social_media_contact .fa-brands.fa-instagram:hover {
+    -webkit-text-fill-color: transparent;
+    background-position: right top;
+}
+.footer_container .text_map_section .section .social_media_contact .fa-brands.fa-facebook:hover {
+    color: #1877F2;
+}
+
 .footer_container .text_map_section .right_section {
     flex-grow: 1;
 }
