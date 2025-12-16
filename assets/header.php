@@ -10,8 +10,8 @@
         </div>
         <nav class="mainNavMenu">
             <ul>
-                <li><a href="">ceník</a></li>
-                <li><a href="">webkamera</a></li>
+                <li><a href="price_list.php">ceník</a></li>
+                <li><a href="webkamera">webkamera</a></li>
                 <li><a href="">rozpis ledu/provozní doba</a></li>
                 <li><a href="" class="box_glass_effect_red">rezervace</a></li>
             </ul>

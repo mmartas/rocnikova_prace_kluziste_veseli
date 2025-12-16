@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="query/header-query.css">
+    <link rel="stylesheet" href="query/footer-query.css">
+    
+    <title>Kluziště v centru | Ceník</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9e0a62895a.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="images/favicon-ice-skates.png" type="image/x-icon">
+</head>
+<body>
+    <?php require "assets/header.php"; ?>
+
+    <main>
+        <div class="main_container">
+            <!-- ÚVOD -->
+            <section class="introduction one_container">
+                <section class="one_section">
+                    <div class="text_section box_glass_effect one_section_left_side">
+                        <h1 class="title"><span class="underline_color_gradient">Ceník</span> bruslení a <br>ostatních služeb <br><span class="text_color_gradient">naleznete níže!</span></h1>
+                    </div>
+                    <div class="photo_group one_section_right_side">
+                        <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
+                    </div>
+                </section>
+            </section>
+            <span class="decoration_red_line"></span>
+            <!-- CENÍK -->
+            <section class="price_list one_container">
+                <h1 class="title text_color_gradient">ceník</h1>
+                <section class="one_section text_section box_glass_effect">
+                    <div class="wrapper">
+                        <h2 class="title text_color_gradient">veřejné bruslení</h2>
+                        <p class="text">
+                            děti do 6 let: zdarma<br>
+                            mládež 7-15 let: XX Kč<br>
+                            mládež 7-15 let(karta občana): XX Kč<br>
+                            dospělý od 16 let: XX Kč<br>
+                            dospělý od 16 let(karta občana): XX Kč
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <h2 class="title text_color_gradient">pronájem ledové plochy</h2>
+                        <p class="text">
+                            pondělí - pátek: 1200 Kč<br>
+                            víkendy, svátky, prázdniny: 1500 Kč
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <h2 class="title text_color_gradient">školní akce</h2>
+                        <p class="text">
+                            školy z Veselí nad Moravou: 500 Kč<br>
+                            ostatní školy: 1000 Kč
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <h2 class="title text_color_gradient">broušení bruslí</h2>
+                        <p class="text">
+                            pár dětských bruslí(velikost 40 a menší): 30 Kč<br>
+                            pár dospělých bruslí(velikost 41 a větší): 60 Kč
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <h2 class="title text_color_gradient">půjčení bruslí</h2>
+                        <p class="text">
+                            pár bruslí: 10 Kč
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <p class="text">
+                            Všechny ceny jsou uvedeny za jeden bruslicí blok, tedy 75 minut (půjčení bruslí platí na celý den).
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <h2 class="title text_color_gradient">občerstvení</h2>
+                        <p class="text">
+                            dle ceníku u kluziště
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
+    <?php require "assets/footer.php"; ?>
+    <script src="js/general.js"></script>
+</body>
+</html>

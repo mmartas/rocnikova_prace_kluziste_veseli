@@ -36,7 +36,7 @@ footer {
     transition: all 0.3s;
 }
 .footer_container .text_map_section .left_section ul li a:hover {
-    color: var(--red-color-lighter);
+    color: var(--red-color-lighter); 
 }
 .footer_container .text_map_section .left_section ul li a img {
     width: 250px;
