@@ -1,0 +1,11 @@
+@media (max-width: 942px){
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+}

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="query/header-query.css">
     <link rel="stylesheet" href="query/index-query.css">
     <link rel="stylesheet" href="query/footer-query.css">
+    <link rel="stylesheet" href="query/general-query.css">
+    
     
     <title>Kluziště v centru | Veselí nad Moravou</title>
 

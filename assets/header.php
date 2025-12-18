@@ -1,3 +1,9 @@
+<?php
+
+    $currentPage = basename($_SERVER['PHP_SELF']);
+
+?>
+
 <header>
     <div class="navbar_container box_glass_effect">
         <div class="header_logo">
@@ -10,8 +16,8 @@
         </div>
         <nav class="mainNavMenu">
             <ul>
-                <li><a href="price_list.php">ceník</a></li>
-                <li><a href="webkamera">webkamera</a></li>
+                <li><a href="price_list.php" class="<?= $currentPage == 'price_list.php' ? 'active' : '' ?>">ceník</a></li>
+                <li><a href="webkamera.php">webkamera</a></li>
                 <li><a href="">rozpis ledu/provozní doba</a></li>
                 <li><a href="" class="box_glass_effect_red">rezervace</a></li>
             </ul>

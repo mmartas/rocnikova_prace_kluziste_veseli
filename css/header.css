@@ -85,6 +85,10 @@ header {
 .navbar_container nav ul li a:hover {
     color: var(--red-color-lighter);
 }
+.navbar_container nav ul li a.active {
+    color: var(--red-color-lighter);
+}
+
 .navbar_container nav ul li:last-child a {
     border-radius: 10px;
     padding: 0.5rem 1rem;

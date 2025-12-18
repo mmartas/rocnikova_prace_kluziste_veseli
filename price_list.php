@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="query/header-query.css">
     <link rel="stylesheet" href="query/footer-query.css">
+    <link rel="stylesheet" href="query/price_list-query.css">
+    <link rel="stylesheet" href="query/general-query.css">
     
     <title>Kluziště v centru | Ceník</title>
 
@@ -48,18 +50,18 @@
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">veřejné bruslení</h2>
                             <p class="text">
-                                děti do 6 let: zdarma<br>
-                                mládež 7-15 let: XX Kč<br>
-                                mládež 7-15 let(karta občana): XX Kč<br>
-                                dospělý od 16 let: XX Kč<br>
-                                dospělý od 16 let(karta občana): XX Kč
+                                děti do 6 let:<br>zdarma<br>
+                                mládež 7-15 let: <br>XX Kč<br>
+                                mládež 7-15 let(karta občana): <br>XX Kč<br>
+                                dospělý od 16 let: <br>XX Kč<br>
+                                dospělý od 16 let(karta občana): <br>XX Kč<br>
                             </p>
                         </div>
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">pronájem ledové plochy</h2>
                             <p class="text">
-                                pondělí - pátek: 1200 Kč<br>
-                                víkendy, svátky, prázdniny: 1500 Kč
+                                pondělí - pátek: <br>1200 Kč<br>
+                                víkendy, svátky, prázdniny: <br>1500 Kč
                             </p>
                         </div>
                     </div>
@@ -67,15 +69,15 @@
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">školní akce</h2>
                             <p class="text">
-                                školy z Veselí nad Moravou: 500 Kč<br>
-                                ostatní školy: 1000 Kč
+                                školy z Veselí nad Moravou: <br>500 Kč<br>
+                                ostatní školy: <br>1000 Kč
                             </p>
                         </div>
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">broušení bruslí</h2>
                             <p class="text">
-                                pár dětských bruslí(velikost 40 a menší): 30 Kč<br>
-                                pár dospělých bruslí(velikost 41 a větší): 60 Kč
+                                pár dětských bruslí(velikost 40 a menší): <br>30 Kč<br>
+                                pár dospělých bruslí(velikost 41 a větší): <br>60 Kč
                             </p>
                         </div>
                     </div>
@@ -83,7 +85,7 @@
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">půjčení bruslí</h2>
                             <p class="text">
-                                pár bruslí: 10 Kč
+                                pár bruslí: <br>10 Kč
                             </p>
                         </div>
                         <div class="wrapper">
@@ -105,6 +107,7 @@
 
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
     <?php require "assets/footer.php"; ?>
+    <script src="js/header.js"></script>
     <script src="js/general.js"></script>
 </body>
 </html>
