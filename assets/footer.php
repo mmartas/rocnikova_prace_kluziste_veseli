@@ -7,7 +7,7 @@
                         <a href=""><img src="images/kluziste_v_centru_vetsi_logo.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="">Provozní řád</a>
+                        <a href="operating_rules.php">Provozní řád</a>
                     </li>
                     <li>    
                         <a href="">Město Veselí nad Moravou</a>
