@@ -1,3 +1,14 @@
 .wrapper {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.operating_rules {
+    gap: 2rem !important;
+}
+
+.operating_rules.one_container .text_section {
+    width: 100% !important;
 }

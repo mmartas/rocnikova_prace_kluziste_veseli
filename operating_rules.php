@@ -143,7 +143,11 @@
                     <div class="text_section">
                         <div class="wrapper">
                             <h2 class="title">provozovatel</h2>
-                            <p class="text">Město Veselí nad Moravou Odbor správy majetku města Tel.: [doplnit kontakt] E-mail: [doplnit e-mail]
+                            <p class="text">
+                                Město Veselí nad Moravou<br>
+                                Odbor správy majetku města<br>
+                                Tel.: [doplnit kontakt]<br>
+                                E-mail: [doplnit e-mail]
                             </p>
                         </div>
                     </div>
