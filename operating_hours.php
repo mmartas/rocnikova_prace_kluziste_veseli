@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="query/header-query.css">
+    <link rel="stylesheet" href="query/footer-query.css">
+    <link rel="stylesheet" href="query/general-query.css">
+
+    <link rel="stylesheet" href="css/operating_hours.css">
+    
+    <title>Kluziště v centru | Rozpis ledu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9e0a62895a.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="images/favicon-ice-skates.png" type="image/x-icon">
+</head>
+<body>
+    <?php require "assets/header.php"; ?>
+    <main>
+        <div class="main_container">
+            <!-- ÚVOD -->
+            <section class="introduction one_container">
+                <section class="one_section">
+                    <div class="text_section box_glass_effect one_section_left_side">
+                        <h1 class="title"><span class="underline_color_gradient">Zkontroluj</span><br> jestli máme <span class="underline_color_gradient">otevřeno</span><br><span class="text_color_gradient">a přijď ještě dnes!</span></h1>
+                    </div>
+                    <div class="photo_group one_section_right_side">
+                        <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
+                    </div>
+                </section>
+            </section>
+            <span class="decoration_red_line"></span>
+            <!-- provozní doba ledové plochy -->
+            <section class="operating_hours one_container">
+                <h1 class="title text_color_gradient">provozní doba ledové plochy</h1>
+                <div class="one_section">
+                    <section class="working_days one_section">
+                        <div class="text_section box_glass_effect">
+                            <div class="wrapper">
+                                <h2 class="title text_color_gradient">pracovní dny</h2>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sequi aut. Soluta expedita quas eaque excepturi similique labore vero asperiores, ad quo explicabo pariatur quaerat, aliquid voluptas doloribus in sequi.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="weekends one_section">
+                        <div class="text_section box_glass_effect">
+                            <div class="wrapper">
+                                <h2 class="title text_color_gradient">víkendy, svátky, prázdniny</h2>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sequi aut. Soluta expedita quas eaque excepturi similique labore vero asperiores, ad quo explicabo pariatur quaerat, aliquid voluptas doloribus in sequi.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+
+            </section>
+            
+            <span class="decoration_red_line"></span>
+            <!-- provozní doba ostatních služeb -->
+            <section class="operating_hours_next_services one_container">
+                <h1 class="title text_color_gradient">provozní doba ostatních služeb</h1>
+                <div class="one_section">
+                    <section class="operating_hours_sharp_skating one_section">
+                        <div class="text_section box_glass_effect">
+                            <div class="wrapper">
+                                <h2 class="title text_color_gradient">broušení bruslí</h2>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sequi aut. Soluta expedita quas eaque excepturi similique labore vero asperiores, ad quo explicabo pariatur quaerat, aliquid voluptas doloribus in sequi.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="operating_hours_food_service one_section">
+                        <div class="text_section box_glass_effect">
+                            <div class="wrapper">
+                                <h2 class=" title text_color_gradient">občerstvení</h2>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem officiis necessitatibus quae voluptates magnam excepturi dolorum accusantium voluptatibus, quasi at laborum odio labore ab natus nesciunt veniam amet quas quis?
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="operating_hours_skate_rental one_section">
+                        <div class="text_section box_glass_effect">
+                            <div class="wrapper">
+                                <h2 class="title text_color_gradient">půjčování bruslí</h2>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos temporibus aperiam ducimus assumenda iure architecto sapiente, ex minima, sit nostrum omnis praesentium dicta dolore molestias exercitationem. Molestiae, esse maiores?
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+            </section>
+            <span class="decoration_red_line"></span>
+        </div>
+    </main>
+    <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
+    <?php require "assets/footer.php"; ?>
+    <script src="js/header.js"></script>
+    <script src="js/general.js"></script>
+</body>
+</html>

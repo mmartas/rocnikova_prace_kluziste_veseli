@@ -1,0 +1,27 @@
+.operating_hours.one_container .one_section{
+    gap: 2rem !important;
+}
+
+.weekends.one_section .text_section, .working_days.one_section .text_section {
+    width: 100% !important;
+}
+
+.operating_hours_next_services.one_container .one_section {
+    flex-wrap: wrap;
+}
+
+.operating_hours_sharp_skating {
+    width: 50% !important;
+}
+
+.operating_hours_food_service {
+    width: 50% !important;
+}
+
+.operating_hours_skate_rental {
+    width: 100% !important;
+}
+
+.operating_hours_sharp_skating .text_section, .operating_hours_food_service .text_section, .operating_hours_skate_rental .text_section {
+    width: 100% !important;
+}

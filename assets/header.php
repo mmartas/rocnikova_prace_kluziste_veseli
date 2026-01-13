@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="price_list.php" class="<?= $currentPage == 'price_list.php' ? 'active' : '' ?>">ceník</a></li>
                 <li><a href="webkamera.php" class="<?= $currentPage == 'webkamera.php' ? 'active' : '' ?>">webkamera</a></li>
-                <li><a href="">rozpis ledu/provozní doba</a></li>
+                <li><a href="operating_hours.php" class="<?= $currentPage == 'operating_hours.php' ? 'active' : '' ?>">rozpis ledu/provozní doba</a></li>
                 <li><a href="" class="box_glass_effect_red">rezervace</a></li>
             </ul>
         </nav>
