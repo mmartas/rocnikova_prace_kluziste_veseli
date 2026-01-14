@@ -48,9 +48,30 @@
                         <div class="text_section box_glass_effect">
                             <div class="wrapper">
                                 <h2 class="title text_color_gradient">pracovní dny</h2>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sequi aut. Soluta expedita quas eaque excepturi similique labore vero asperiores, ad quo explicabo pariatur quaerat, aliquid voluptas doloribus in sequi.
-                                </p>
+                                <div class="blok text">
+                                    <p>8:00 - 14:00</p>
+                                    <p>Školní akce</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>14:00 - 15:30</p>
+                                    <p>Velký úklid ledu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>15:30 - 16:45</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>17:00 - 18:15</p>
+                                    <p>Veřejné bruslení</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>18:30 - 19:45</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>20:00 - 21:15</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -59,9 +80,46 @@
                         <div class="text_section box_glass_effect">
                             <div class="wrapper">
                                 <h2 class="title text_color_gradient">víkendy, svátky, prázdniny</h2>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sequi aut. Soluta expedita quas eaque excepturi similique labore vero asperiores, ad quo explicabo pariatur quaerat, aliquid voluptas doloribus in sequi.
-                                </p>
+                                <div class="blok text">
+                                    <p>8:00 - 9:15</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>9:30 - 10:00</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>10:15 - 11:45</p>
+                                    <p>Veřejné bruslení</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>12:00 - 13:15</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>13:30 - 14:45</p>
+                                    <p>Veřejné bruslení</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>14:45 - 16:00</p>
+                                    <p>Velký úklid ledu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>16:00 - 17:15</p>
+                                    <p>Veřejné bruslení</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>17:30 - 18:45</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>19:00 - 20:15</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
+                                <div class="blok text">
+                                    <p>20:30 - 21:45</p>
+                                    <p>Možnost pronájmu</p>
+                                </div>
                             </div>
                         </div>
                     </section>

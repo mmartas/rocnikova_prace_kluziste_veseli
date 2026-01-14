@@ -25,3 +25,13 @@
 .operating_hours_sharp_skating .text_section, .operating_hours_food_service .text_section, .operating_hours_skate_rental .text_section {
     width: 100% !important;
 }
+
+.operating_hours .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.operating_hours .wrapper .blok p:nth-of-type(2) {
+  font-weight: bold;
+}
