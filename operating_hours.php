@@ -125,43 +125,48 @@
                     </section>
                 </div>
                 
-
+            </section>
+            <section>
+                <p class="text">Provozní doba se<span> může lišit </span>v závislosti na poptávce, počasí a dalších faktorech ovlivňující provoz kluziště, proto <a href="">sledujte především aktuální rozpis ledu!</a></p>
+                <p class="text">Ledovou plochu si můžete pronajmout <a href="">ZDE!</a></p>
             </section>
             
-            <span class="decoration_red_line"></span>
+
             <!-- provozní doba ostatních služeb -->
-            <section class="operating_hours_next_services one_container">
+            <section class="operating_hours operating_hours_next_services one_container">
                 <h1 class="title text_color_gradient">provozní doba ostatních služeb</h1>
                 <div class="one_section">
-                    <section class="operating_hours_sharp_skating one_section">
+                    <section class="operating_hours_sharp_skating">
                         <div class="text_section box_glass_effect">
                             <div class="wrapper">
                                 <h2 class="title text_color_gradient">broušení bruslí</h2>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sequi aut. Soluta expedita quas eaque excepturi similique labore vero asperiores, ad quo explicabo pariatur quaerat, aliquid voluptas doloribus in sequi.
-                                </p>
+                                <div class="blok text">
+                                    <p>15:30 - 17:30</p>
+                                    <p>středa, čtvrtek</p>
+                                </div>
                             </div>
                         </div>
                     </section>
 
-                    <section class="operating_hours_food_service one_section">
+                    <section class="operating_hours_food_service">
                         <div class="text_section box_glass_effect">
                             <div class="wrapper">
                                 <h2 class=" title text_color_gradient">občerstvení</h2>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem officiis necessitatibus quae voluptates magnam excepturi dolorum accusantium voluptatibus, quasi at laborum odio labore ab natus nesciunt veniam amet quas quis?
-                                </p>
+                                <div class="blok text">
+                                    <p>dle provozní doby<br>ledové plochy</p>
+                                    
+                                </div>
                             </div>
                         </div>
                     </section>
 
-                    <section class="operating_hours_skate_rental one_section">
+                    <section class="operating_hours_skate_rental">
                         <div class="text_section box_glass_effect">
                             <div class="wrapper">
                                 <h2 class="title text_color_gradient">půjčování bruslí</h2>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos temporibus aperiam ducimus assumenda iure architecto sapiente, ex minima, sit nostrum omnis praesentium dicta dolore molestias exercitationem. Molestiae, esse maiores?
-                                </p>
+                                <div class="blok text">
+                                    <p>v době veřejného bruslení</p>
+                                </div>
                             </div>
                         </div>
                     </section>
