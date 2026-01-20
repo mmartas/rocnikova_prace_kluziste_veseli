@@ -10,10 +10,10 @@
                         <a href="operating_rules.php">Provozní řád</a>
                     </li>
                     <li>    
-                        <a href="">Město Veselí nad Moravou</a>
+                        <a href="https://www.veseli-nad-moravou.cz/" target="_blank">Město Veselí nad Moravou</a>
                     </li>
                     <li>
-                        <a href="">Naši partneři</a>
+                        <a href="partners.php">Naši partneři</a>
                     </li>
                 </ul>
             </nav>

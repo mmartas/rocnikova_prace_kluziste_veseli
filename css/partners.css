@@ -1,0 +1,22 @@
+.main_partners .partners .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main_partners .partners .wrapper img {
+    width: 250px;
+}
+
+.main_partners.one_container .text_section{
+    width: auto !important;
+    cursor: pointer;
+}
+
+.main_partners.one_container .text_section:hover {
+    
+}
+
+.main_partners.one_container .text_section .title {
+    text-transform: none !important;
+}
