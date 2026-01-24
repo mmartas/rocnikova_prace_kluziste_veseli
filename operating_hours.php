@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="query/header-query.css">
     <link rel="stylesheet" href="query/footer-query.css">
     <link rel="stylesheet" href="query/general-query.css">
+    <link rel="stylesheet" href="query/operating_hours-query.css">
 
     <link rel="stylesheet" href="css/operating_hours.css">
     

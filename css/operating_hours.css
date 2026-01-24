@@ -1,5 +1,5 @@
 .operating_hours.one_container .one_section{
-    gap: 2rem !important;
+    gap: 2rem;
     align-items: start;
 }
 .operating_hours_next_services.one_container .one_section {

@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+    .operating_hours_sharp_skating, .operating_hours_food_service, .operating_hours_skate_rental {
+        width: 100%;
+    }
+
+    .operating_hours.one_container .one_section {
+        gap: 5rem !important;
+    }
+}
