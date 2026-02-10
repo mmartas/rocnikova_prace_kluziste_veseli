@@ -14,9 +14,39 @@
 }
 
 .main_partners.one_container .text_section:hover {
+    transform: scale(1.025);
     
+    box-shadow: 0 4px 20px var(--red-color) !important;
+    border: 1px solid var(--red-color);
 }
 
 .main_partners.one_container .text_section .title {
     text-transform: none !important;
+}
+
+.main_partners.one_container .partners.one_section a {
+    text-decoration: none;
+}
+
+.main_partners.one_container .partners.one_section h2 {
+    display: inline-block;
+    color: transparent;
+
+    background-image: linear-gradient(
+        to top,
+        var(--red-color) 0%,
+        var(--red-color-lighter) 25%,
+        var(--white-color) 50%
+    );
+    background-size: 100% 200%;
+    background-position: 0 0;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    transition: background-position 0.4s ease;
+}
+
+.main_partners.one_container .partners.one_section .text_section:hover h2 {
+    background-position: 0 100%;
 }

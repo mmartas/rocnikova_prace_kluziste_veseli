@@ -41,17 +41,22 @@
                 </section>
             </section>
 
+            
             <section class="main_partners one_container">
                 <h1 class="title text_color_gradient">partneři</h1>
                 <section class="partners one_section">
-                    <div class="text_section box_glass_effect">
-                        <div class="wrapper">
-                            <img src="images/prostefitko.jpg" alt="">
-                            <h2 class="title">Prostěfitko</h2>
+                    <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <div class="text_section box_glass_effect">
+                            <div class="wrapper">
+                                <img src="images/prostefitko.jpg" alt="">
+                                <h2 class="title">Prostěfitko</h2>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </section>
             </section>
+            
+            
             <span class="decoration_red_line"></span>
         </div>
     </main>

@@ -181,6 +181,7 @@ main {
     width: 66%;
     z-index: 10;
     text-align: center;
+    transition: all 0.3s;
 }
 
 .main_container .one_container .one_section .text_section h1 {
