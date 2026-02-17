@@ -11,6 +11,7 @@
 .main_partners.one_container .text_section{
     width: auto !important;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .main_partners.one_container .text_section:hover {
