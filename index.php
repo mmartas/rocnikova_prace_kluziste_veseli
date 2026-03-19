@@ -49,10 +49,10 @@
                     <div class="text_section box_glass_effect one_section_right_side">
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">bruslení pro veřejnost</h2>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sequi aut. Soluta expedita quas eaque excepturi similique labore vero asperiores, ad quo explicabo pariatur quaerat, aliquid voluptas doloribus in sequi.
+                            <p class="text">Přijďte si zabruslit na naše městské kluziště a užít si příjemnou atmosféru na ledě. Veřejné bruslení je určeno pro děti, dospělé i seniory – ať už jste začátečník nebo zkušený bruslař. Ledová plocha je pravidelně upravována, takže se můžete těšit na kvalitní a bezpečný povrch. K dispozici je šatna, i hrazdičky pro děti.
+
+                            Aktuální rozpis veřejného bruslení najdete <a href="operating_hours.php">zde</a>. Stačí si vzít brusle (nebo si je půjčit u nás) a dorazit – o zbytek se postaráme my.
                             </p>
-                            <i class="fa-solid fa-angle-left"></i>
                         </div>
                     </div>
                     <div class="photo_group one_section_left_side">
@@ -64,10 +64,10 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <div class="wrapper">
                             <h2 class=" title text_color_gradient">pronájem ledové plochy</h2>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem officiis necessitatibus quae voluptates magnam excepturi dolorum accusantium voluptatibus, quasi at laborum odio labore ab natus nesciunt veniam amet quas quis?
+                            <p class="text">Chcete si zahrát hokej s přáteli, uspořádat firemní akci nebo soukromé bruslení? Nabízíme možnost pronájmu celé ledové plochy v předem domluveném termínu.
+
+                            Pronájem je vhodný pro sportovní týmy, firmy i jednotlivce. Termín je nutné rezervovat předem prostřednictvím našeho rezervačního systému nebo kontaktu uvedeného na webu. Rádi vám pomůžeme naplánovat akci přesně podle vašich představ.
                             </p>
-                            <i class="fa-solid fa-angle-right"></i>
                         </div>
                     </div>
                     <div class="photo_group one_section_right_side">
@@ -79,10 +79,10 @@
                     <div class="text_section box_glass_effect one_section_right_side">
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">školní akce</h2>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos temporibus aperiam ducimus assumenda iure architecto sapiente, ex minima, sit nostrum omnis praesentium dicta dolore molestias exercitationem. Molestiae, esse maiores?
+                            <p class="text">Pro školy a školky nabízíme zvýhodněné vstupné a možnost organizovaných dopoledních bruslení. Kluziště je ideálním místem pro sportovní výuku i zpestření školního programu.
+
+                            Po předchozí domluvě je možné zajistit vyhrazený čas pouze pro vaši třídu nebo školu. Bezpečnost dětí je pro nás prioritou a led je vždy připraven v perfektním stavu. Pro více informací nás neváhejte kontaktovat.
                             </p>
-                            <i class="fa-solid fa-angle-right"></i>
                         </div>
                     </div>
                     <div class="photo_group one_section_left_side">
@@ -100,10 +100,10 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">broušení bruslí</h2>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sequi aut. Soluta expedita quas eaque excepturi similique labore vero asperiores, ad quo explicabo pariatur quaerat, aliquid voluptas doloribus in sequi.
+                            <p class="text">Aby byla jízda na ledě bezpečná a pohodlná, nabízíme broušení bruslí přímo na místě. Ostré brusle zajistí lepší stabilitu, kontrolu a celkový zážitek z bruslení.
+
+                            Službu je možné využít v <a href="operating_hours.php">tuto</a> dobu. Doporučujeme nechat si brusle nabrousit pravidelně, zejména pokud cítíte zhoršenou přilnavost na ledě.
                             </p>
-                            <i class="fa-solid fa-angle-left"></i>
                         </div>
                     </div>
                     <div class="photo_group one_section_right_side">
@@ -115,10 +115,10 @@
                     <div class="text_section box_glass_effect one_section_right_side">
                         <div class="wrapper">
                             <h2 class=" title text_color_gradient">půjčování bruslí</h2>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem officiis necessitatibus quae voluptates magnam excepturi dolorum accusantium voluptatibus, quasi at laborum odio labore ab natus nesciunt veniam amet quas quis?
+                            <p class="text">Nemáte vlastní brusle? Nevadí. Na místě nabízíme půjčovnu bruslí v různých velikostech pro děti i dospělé. Stačí přijít, vybrat správnou velikost a můžete vyrazit na led.
+
+                            Brusle jsou pravidelně kontrolovány a udržovány, aby byly bezpečné a pohodlné. Doporučujeme přijít s menší časovou rezervou, zejména ve vytížených hodinách.
                             </p>
-                            <i class="fa-solid fa-angle-right"></i>
                         </div>
                     </div>
                     <div class="photo_group one_section_left_side">
@@ -130,10 +130,10 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">občerstvení</h2>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga praesentium tenetur similique rem doloribus at iste officia consequuntur, corrupti illo voluptas repudiandae amet nemo dignissimos maxime voluptatem aperiam sapiente.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos temporibus aperiam ducimus assumenda iure architecto sapiente, ex minima, sit nostrum omnis praesentium dicta dolore molestias exercitationem. Molestiae, esse maiores?
+                            <p class="text">Po sportovním výkonu si můžete odpočinout v našem stánku s občerstvením. Nabízíme teplé i studené nápoje a drobné občerstvení, které vám dodá energii.
+
+                            Zastavte se na čaj, kávu nebo něco malého k zakousnutí a užijte si příjemnou zimní atmosféru s rodinou či přáteli. Těšíme se na vaši návštěvu!
                             </p>
-                            <i class="fa-solid fa-angle-right"></i>
                         </div>
                     </div>
                     <div class="photo_group one_section_right_side">
@@ -145,6 +145,7 @@
         </div>
     </main>
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
+    <img src="images/test.png" alt="" id="background_effect_snow">
     <?php require "assets/footer.php"; ?>
     <script src="js/header.js"></script>
     <script src="js/general.js"></script>
