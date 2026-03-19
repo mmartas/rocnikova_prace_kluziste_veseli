@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/rezervation.css">
 
     <link rel="stylesheet" href="query/header-query.css">
     <link rel="stylesheet" href="query/footer-query.css">
@@ -28,13 +29,6 @@
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
 
-    <style>
-        #calendar {
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-        }
-    </style>
 </head>
 <body>
     <?php require "assets/header.php"; ?>
@@ -54,11 +48,18 @@
             </section>
             <span class="decoration_red_line"></span>
 
-            <section clas="rezervation one_container">
+            <section class="rezervation one_container">
                 <h1 class="title text_color_gradient">rezervační kalendář</h1>
+
+                <div id="calendar" class="box_glass_effect"></div>
+
+                <form action="">
+                    <input type="text">
+                    <input type="text">
+                </form>
             </section>
 
-            <div id="calendar"></div>
+            
 
             <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -67,7 +68,7 @@
                 const calendar = new FullCalendar.Calendar(calendarEl, {
                     locale: 'cs',
 
-                    initialView: 'timeGridDay',
+                    initialView: 'timeGridWeek',
 
                     headerToolbar: {
                         left: 'prev,next today',

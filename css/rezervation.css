@@ -1,0 +1,22 @@
+.fc {
+    width: 80%;
+    font-family: 'Anton', sans-serif;
+    color: var(--white-color);
+}
+.fc .fc-toolbar.fc-header-toolbar {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.fc .fc-button-group > .fc-button {
+    background: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+    box-shadow: inset -20px -20px 20px var(--red-color-shadow-01),
+                inset 20px 20px 20px var(--red-color-shadow-01);
+    background: transparent;
+}
