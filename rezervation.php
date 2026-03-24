@@ -28,6 +28,7 @@
     <!-- FullCalendar -->
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/locales-all.global.min.js"></script>
 
 </head>
 <body>
@@ -73,11 +74,22 @@
                     headerToolbar: {
                         left: 'prev,next today',
                         center: 'title',
-                        right: 'timeGridDay,timeGridWeek'
+                        right: 'timeGridDay,timeGridWeek,dayGridMonth'
                     },
 
-                    slotMinTime: '08:00:00',
-                    slotMaxTime: '18:00:00',
+                    buttonText: {
+                        today: "Dnes",
+                        week: "Týden",
+                        day: "Den",
+                        month: "Měsíc"
+                    },
+                    
+                    expandRows: false,
+                    height: 'auto',
+                    firstDay: 1,
+
+                    slotMinTime: '06:00:00',
+                    slotMaxTime: '23:00:00',
 
                     slotDuration: '01:00:00',
                     slotLabelInterval: '01:00',
@@ -85,6 +97,9 @@
                     allDaySlot: false,
 
                     events: 'events.php'
+
+                    
+
                 });
 
                 calendar.render();
