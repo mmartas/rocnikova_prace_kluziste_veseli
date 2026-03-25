@@ -46,7 +46,7 @@
             <section class="ice_rink_for_everyone one_container">
                 <h1 class="title text_color_gradient">ledová plocha pro všechny</h1>
                 <section class="public_skating one_section">
-                    <div class="text_section box_glass_effect one_section_right_side">
+                    <div class="text_section box_glass_effect one_section_right_side reveal_right">
                         <div class="wrapper">
                             <h2 class="title text_color_gradient">bruslení pro veřejnost</h2>
                             <p class="text">Přijďte si zabruslit na naše městské kluziště a užít si příjemnou atmosféru na ledě. Veřejné bruslení je určeno pro děti, dospělé i seniory – ať už jste začátečník nebo zkušený bruslař. Ledová plocha je pravidelně upravována, takže se můžete těšit na kvalitní a bezpečný povrch. K dispozici je šatna, i hrazdičky pro děti.
@@ -55,7 +55,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="photo_group one_section_left_side">
+                    <div class="photo_group one_section_left_side reveal_left">
                         <img src="images/verejne-brusleni-napajedla_800.jpg" alt="" class="left_photo_clip">
                     </div>
                 </section>

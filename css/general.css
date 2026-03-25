@@ -200,3 +200,20 @@ main {
     margin-top: 80px;
 }
 
+.reveal_right {
+    opacity: 0 !important;
+    transform: translateX(50px) !important;
+    transition: all 0.6s ease-out;
+}
+
+.reveal_left {
+    opacity: 0 !important;
+    transform: translateX(-50px) !important;
+    transition: all 0.6 ease-out;
+}
+
+.reveal_right.active,
+.reveal_left.active {
+    opacity: 1 !important;
+    transform: translateX(0px) !important;
+}

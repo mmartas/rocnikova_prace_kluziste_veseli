@@ -14,3 +14,20 @@ ArrowToScroll.addEventListener("click", function(event){
         behavior: "smooth"
     });
 });
+
+
+const reveals = document.querySelectorAll(".reveal_left, .reveal_right");
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      observer.unobserve(entry.target); // spustí jen jednou
+    }
+  });
+}, {
+  threshold: 0.1 // kolik % objektu musí být vidět, aby se spustil efekt
+});
+
+// pozoruj každý element
+reveals.forEach(el => observer.observe(el));
