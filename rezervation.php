@@ -50,14 +50,38 @@
             <span class="decoration_red_line"></span>
 
             <section class="rezervation one_container">
+                <section>
+                    <p class="text">Formulář pro objednání najdete pod rezervačním kalendářem níže.</p>
+                </section>
                 <h1 class="title text_color_gradient">rezervační kalendář</h1>
+                
+                <section class="one_section">
+                    <div id="calendar" class="box_glass_effect"></div>
+                </section>
 
-                <div id="calendar" class="box_glass_effect"></div>
+                <h1 class="title text_color_gradient">rezervační formulář</h1>
+                <section>
+                    <form action="">
+                        <div class="client_name_surname">
+                            <input type="text" placeholder="Jméno">
+                            <input type="text" placeholder="Příjmení">
+                        </div>
+                        <div class="client_contacts">
+                            <input type="email" placeholder="Email" name="" id="">
+                            <input type="tel" placeholder="Telefonní číslo" name="" id="">
+                        </div>
+                        <div class="client_date_time">
+                            <input type="date" name="" id="">
+                            <input type="time" name="" id="">
+                        </div>
+                        <div class="client_notes">
+                            <textarea placeholder="Poznámky" name="" id=""></textarea>
+                        </div>
+                        
+                    </form>
+                </section>
 
-                <form action="">
-                    <input type="text">
-                    <input type="text">
-                </form>
+                
             </section>
 
             

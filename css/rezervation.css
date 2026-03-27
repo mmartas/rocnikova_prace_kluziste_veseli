@@ -2,6 +2,7 @@
     width: 80%;
     font-family: 'Anton', sans-serif;
     color: var(--white-color);
+    margin: 0 auto;
 }
 .fc .fc-toolbar.fc-header-toolbar {
     width: 90%;
@@ -65,6 +66,7 @@
 /* KALENDÁŘNÍ MŘÍŽKA */
 .fc .fc-view-harness {
     padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 .fc-theme-standard .fc-scrollgrid {
     background-color: var(--white-color);
@@ -87,3 +89,6 @@
 .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
     background-color: var(--red-color-lighter);
 }
+
+
+
