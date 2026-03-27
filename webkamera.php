@@ -34,7 +34,7 @@
             <section class="introduction one_container">
                 <section class="one_section">
                     <div class="text_section box_glass_effect one_section_left_side">
-                        <h1 class="title"><span class="underline_color_gradient">Mrkněte</span> na naše <span class="underline_color_gradient">kluziště<br>online</span> a zjistěte,<br> <span class="text_color_gradient">jak to u nás právě žije!</span></h1>
+                        <h1 class="title reveal delay"><span class="underline_color_gradient">Mrkněte</span> na naše <span class="underline_color_gradient">kluziště<br>online</span> a zjistěte,<br> <span class="text_color_gradient">jak to u nás právě žije!</span></h1>
                     </div>
                     <div class="photo_group one_section_right_side">
                         <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">

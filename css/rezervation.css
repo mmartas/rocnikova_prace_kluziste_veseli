@@ -66,17 +66,24 @@
 .fc .fc-view-harness {
     padding: 1rem;
 }
-
 .fc-theme-standard .fc-scrollgrid {
     background-color: var(--white-color);
     color: black;
 }
 
+/* víkend */
 .fc-day-sat, 
 .fc-day-sun {
   background-color: #cacaca;
 }
 
+/* dnešní den */
 .fc-day-today {
+    background-color: var(--red-color-lighter);
+}
+.fc .fc-timegrid-col.fc-day-today {
+    background-color: #ffabb6;
+}
+.fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
     background-color: var(--red-color-lighter);
 }

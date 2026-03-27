@@ -34,7 +34,7 @@
             <section class="introduction one_container">
                 <section class="one_section">
                     <div class="text_section box_glass_effect one_section_left_side">
-                        <h1 class="title"><span class="underline_color_gradient">Přijďte</span> si zabruslit <br>na <span class="underline_color_gradient">kluziště</span> ve<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
+                        <h1 class="title reveal delay"><span class="underline_color_gradient">Přijďte</span> si zabruslit <br>na <span class="underline_color_gradient">kluziště</span> ve<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
                     </div>
                     <div class="photo_group one_section_right_side">
                         <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
@@ -46,8 +46,8 @@
             <section class="ice_rink_for_everyone one_container">
                 <h1 class="title text_color_gradient">ledová plocha pro všechny</h1>
                 <section class="public_skating one_section">
-                    <div class="text_section box_glass_effect one_section_right_side reveal_right">
-                        <div class="wrapper">
+                    <div class="text_section box_glass_effect one_section_right_side">
+                        <div class="wrapper reveal">
                             <h2 class="title text_color_gradient">bruslení pro veřejnost</h2>
                             <p class="text">Přijďte si zabruslit na naše městské kluziště a užít si příjemnou atmosféru na ledě. Veřejné bruslení je určeno pro děti, dospělé i seniory – ať už jste začátečník nebo zkušený bruslař. Ledová plocha je pravidelně upravována, takže se můžete těšit na kvalitní a bezpečný povrch. K dispozici je šatna, i hrazdičky pro děti.
 
@@ -55,14 +55,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="photo_group one_section_left_side reveal_left">
+                    <div class="photo_group one_section_left_side">
                         <img src="images/verejne-brusleni-napajedla_800.jpg" alt="" class="left_photo_clip">
                     </div>
                 </section>
 
                 <section class="rental_ice_rink one_section">
                     <div class="text_section box_glass_effect one_section_left_side">
-                        <div class="wrapper">
+                        <div class="wrapper reveal">
                             <h2 class=" title text_color_gradient">pronájem ledové plochy</h2>
                             <p class="text">Chcete si zahrát hokej s přáteli, uspořádat firemní akci nebo soukromé bruslení? Nabízíme možnost pronájmu celé ledové plochy v předem domluveném termínu.
 
@@ -77,7 +77,7 @@
 
                 <section class="school_actions one_section">
                     <div class="text_section box_glass_effect one_section_right_side">
-                        <div class="wrapper">
+                        <div class="wrapper reveal">
                             <h2 class="title text_color_gradient">školní akce</h2>
                             <p class="text">Pro školy a školky nabízíme zvýhodněné vstupné a možnost organizovaných dopoledních bruslení. Kluziště je ideálním místem pro sportovní výuku i zpestření školního programu.
 
@@ -98,7 +98,7 @@
 
                 <section class="sharp_skating one_section">
                     <div class="text_section box_glass_effect one_section_left_side">
-                        <div class="wrapper">
+                        <div class="wrapper reveal">
                             <h2 class="title text_color_gradient">broušení bruslí</h2>
                             <p class="text">Aby byla jízda na ledě bezpečná a pohodlná, nabízíme broušení bruslí přímo na místě. Ostré brusle zajistí lepší stabilitu, kontrolu a celkový zážitek z bruslení.
 
@@ -113,7 +113,7 @@
 
                 <section class="skate_rental one_section">
                     <div class="text_section box_glass_effect one_section_right_side">
-                        <div class="wrapper">
+                        <div class="wrapper reveal">
                             <h2 class=" title text_color_gradient">půjčování bruslí</h2>
                             <p class="text">Nemáte vlastní brusle? Nevadí. Na místě nabízíme půjčovnu bruslí v různých velikostech pro děti i dospělé. Stačí přijít, vybrat správnou velikost a můžete vyrazit na led.
 
@@ -128,7 +128,7 @@
 
                 <section class="food_service one_section">
                     <div class="text_section box_glass_effect one_section_left_side">
-                        <div class="wrapper">
+                        <div class="wrapper reveal">
                             <h2 class="title text_color_gradient">občerstvení</h2>
                             <p class="text">Po sportovním výkonu si můžete odpočinout v našem stánku s občerstvením. Nabízíme teplé i studené nápoje a drobné občerstvení, které vám dodá energii.
 

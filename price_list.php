@@ -34,7 +34,7 @@
             <section class="introduction one_container">
                 <section class="one_section">
                     <div class="text_section box_glass_effect one_section_left_side">
-                        <h1 class="title"><span class="underline_color_gradient">Ceník</span> bruslení a <br>ostatních služeb <br><span class="text_color_gradient">naleznete níže!</span></h1>
+                        <h1 class="title reveal delay"><span class="underline_color_gradient">Ceník</span> bruslení a <br>ostatních služeb <br><span class="text_color_gradient">naleznete níže!</span></h1>
                     </div>
                     <div class="photo_group one_section_right_side">
                         <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
