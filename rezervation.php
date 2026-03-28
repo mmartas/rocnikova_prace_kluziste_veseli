@@ -60,22 +60,39 @@
                 </section>
 
                 <h1 class="title text_color_gradient">rezervační formulář</h1>
-                <section>
+                <section class="one_section rezervation_formular text">
                     <form action="">
-                        <div class="client_name_surname">
-                            <input type="text" placeholder="Jméno">
-                            <input type="text" placeholder="Příjmení">
+                        <div class="client_info_row">
+                            <div class="inputBox">
+                                <input placeholder=" " type="text" class="box_glass_effect" id="clientName" required>
+                                <label for="clientName">Jméno</label>
+                            </div>
+                            <div class="inputBox">
+                                <input placeholder=" " type="text" class="box_glass_effect" id="clientSurname" required>
+                                <label for="clientSurname">Příjmení</label>
+                            </div>
                         </div>
-                        <div class="client_contacts">
-                            <input type="email" placeholder="Email" name="" id="">
-                            <input type="tel" placeholder="Telefonní číslo" name="" id="">
+                        <div class="client_info_row">
+                            <div class="inputBox">
+                                <input placeholder=" " type="email" name="" id="clientEmail" class="box_glass_effect" required>
+                                <label for="clientEmail">Email</label>
+                            </div>
+                            <div class="inputBox">
+                                <input placeholder=" " type="tel" name="" id="clientTel" class="box_glass_effect" required>
+                                <label for="clientTel">Tel. číslo</label>
+                            </div>
+                            
                         </div>
-                        <div class="client_date_time">
-                            <input type="date" name="" id="">
-                            <input type="time" name="" id="">
+                        <div class="client_info_row">
+                            <input type="date" name="" id="clientDate" class="box_glass_effect">
+                            <input type="time" name="" id="clientTime" class="box_glass_effect">
                         </div>
-                        <div class="client_notes">
-                            <textarea placeholder="Poznámky" name="" id=""></textarea>
+                        <div class="client_info_row">
+                            <div class="inputBox">
+                                <textarea name="" id="clientNotes" class="box_glass_effect"></textarea>
+                                <label for="clientNotes">Poznámky</label>
+                            </div>
+                            
                         </div>
                         
                     </form>

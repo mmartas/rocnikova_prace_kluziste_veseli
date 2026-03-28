@@ -91,4 +91,55 @@
 }
 
 
+.rezervation_formular form {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 18px !important;
+}
 
+.client_info_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.rezervation_formular form .client_info_row .inputBox {
+    position: relative;
+}
+
+.rezervation_formular form .client_info_row .inputBox input {
+    padding: 1rem;
+    outline: none;
+    font-size: 1.1rem;
+    color: var(--white-color);
+}
+
+.rezervation_formular form .client_info_row .inputBox input:focus,
+.rezervation_formular form .client_info_row .inputBox input:not(:placeholder-shown) {
+    border: 1px solid var(--red-color-lighter);
+}
+
+.rezervation_formular form .client_info_row .inputBox input:focus + label,
+.rezervation_formular form .client_info_row .inputBox input:not(:placeholder-shown) + label{
+    top: -13px;
+    left: 34px;
+    font-size: 16px !important;
+    border: 1px solid var(--red-color-lighter);
+    padding: 1px 3px;
+    background: var(--red-color-lighter);
+    border-radius: 20px;
+}
+
+.rezervation_formular form .client_info_row .inputBox label {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    cursor: text;
+    transition: all 0.3s ease-out;
+    border-radius: 20px;
+}
