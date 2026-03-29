@@ -47,7 +47,7 @@
                 <div class="one_section">
                     <section class="working_days one_section">
                         <div class="text_section box_glass_effect">
-                            <div class="wrapper">
+                            <div class="wrapper reveal">
                                 <h2 class="title text_color_gradient">pracovní dny</h2>
                                 <div class="blok text">
                                     <p>8:00 - 14:00</p>
@@ -79,7 +79,7 @@
 
                     <section class="weekends one_section">
                         <div class="text_section box_glass_effect">
-                            <div class="wrapper">
+                            <div class="wrapper reveal">
                                 <h2 class="title text_color_gradient">víkendy, svátky, prázdniny</h2>
                                 <div class="blok text">
                                     <p>8:00 - 9:15</p>
@@ -139,7 +139,7 @@
                 <div class="one_section">
                     <section class="operating_hours_sharp_skating">
                         <div class="text_section box_glass_effect">
-                            <div class="wrapper">
+                            <div class="wrapper reveal">
                                 <h2 class="title text_color_gradient">broušení bruslí</h2>
                                 <div class="blok text">
                                     <p>15:30 - 17:30</p>
@@ -151,7 +151,7 @@
 
                     <section class="operating_hours_food_service">
                         <div class="text_section box_glass_effect">
-                            <div class="wrapper">
+                            <div class="wrapper reveal">
                                 <h2 class=" title text_color_gradient">občerstvení</h2>
                                 <div class="blok text">
                                     <p>dle provozní doby<br>ledové plochy</p>
@@ -163,7 +163,7 @@
 
                     <section class="operating_hours_skate_rental">
                         <div class="text_section box_glass_effect">
-                            <div class="wrapper">
+                            <div class="wrapper reveal">
                                 <h2 class="title text_color_gradient">půjčování bruslí</h2>
                                 <div class="blok text">
                                     <p>v době veřejného bruslení</p>

@@ -112,7 +112,8 @@
     position: relative;
 }
 
-.rezervation_formular form .client_info_row .inputBox input {
+.rezervation_formular form .client_info_row .inputBox input,
+.rezervation_formular form .client_info_row .inputBox textarea {
     padding: 1rem;
     outline: none;
     font-size: 1.1rem;
@@ -120,12 +121,16 @@
 }
 
 .rezervation_formular form .client_info_row .inputBox input:focus,
-.rezervation_formular form .client_info_row .inputBox input:not(:placeholder-shown) {
+.rezervation_formular form .client_info_row .inputBox input:not(:placeholder-shown),
+.rezervation_formular form .client_info_row .inputBox textarea:focus,
+.rezervation_formular form .client_info_row .inputBox textarea:not(:placeholder-shown) {
     border: 1px solid var(--red-color-lighter);
 }
 
 .rezervation_formular form .client_info_row .inputBox input:focus + label,
-.rezervation_formular form .client_info_row .inputBox input:not(:placeholder-shown) + label{
+.rezervation_formular form .client_info_row .inputBox input:not(:placeholder-shown) + label,
+.rezervation_formular form .client_info_row .inputBox textarea:focus + label,
+.rezervation_formular form .client_info_row .inputBox textarea:not(:placeholder-shown) + label{
     top: -13px;
     left: 34px;
     font-size: 16px !important;
@@ -142,4 +147,29 @@
     cursor: text;
     transition: all 0.3s ease-out;
     border-radius: 20px;
+}
+
+.rezervation_formular form .client_info_row .inputBox.notes {
+    width: 100%;
+}
+
+.rezervation_formular form .client_info_row .inputBox.notes textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.rezervation_formular form button {
+    padding: 1rem;
+    border: 1px solid var(--red-color-lighter);
+    box-shadow: inset -20px -20px 20px var(--red-color-shadow-01),
+                inset 20px 20px 20px var(--red-color-shadow-01);
+    background: transparent;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.rezervation_formular form button:hover {
+    background-color: var(--red-color-lighter);
+    cursor: pointer;
 }

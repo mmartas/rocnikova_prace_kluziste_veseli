@@ -61,104 +61,53 @@
 
                 <h1 class="title text_color_gradient">rezervační formulář</h1>
                 <section class="one_section rezervation_formular text">
-                    <form action="">
+                    <form id="rezervationForm">
                         <div class="client_info_row">
                             <div class="inputBox">
-                                <input placeholder=" " type="text" class="box_glass_effect" id="clientName" required>
+                                <input placeholder=" " type="text" name="name" class="box_glass_effect" id="clientName" required>
                                 <label for="clientName">Jméno</label>
                             </div>
                             <div class="inputBox">
-                                <input placeholder=" " type="text" class="box_glass_effect" id="clientSurname" required>
+                                <input placeholder=" " type="text" name="surname" class="box_glass_effect" id="clientSurname" required>
                                 <label for="clientSurname">Příjmení</label>
                             </div>
                         </div>
                         <div class="client_info_row">
                             <div class="inputBox">
-                                <input placeholder=" " type="email" name="" id="clientEmail" class="box_glass_effect" required>
+                                <input placeholder=" " type="email" name="email" id="clientEmail" class="box_glass_effect" required>
                                 <label for="clientEmail">Email</label>
                             </div>
                             <div class="inputBox">
-                                <input placeholder=" " type="tel" name="" id="clientTel" class="box_glass_effect" required>
+                                <input placeholder=" " type="tel" name="tel" id="clientTel" class="box_glass_effect" required>
                                 <label for="clientTel">Tel. číslo</label>
                             </div>
-                            
-                        </div>
-                        <div class="client_info_row">
-                            <input type="date" name="" id="clientDate" class="box_glass_effect">
-                            <input type="time" name="" id="clientTime" class="box_glass_effect">
                         </div>
                         <div class="client_info_row">
                             <div class="inputBox">
-                                <textarea name="" id="clientNotes" class="box_glass_effect"></textarea>
+                                <input type="date" name="date" id="clientDate" class="box_glass_effect" required>
+                            </div>
+                            <div class="inputBox">
+                                <input type="time" name="time" id="clientTime" class="box_glass_effect" required>
+                            </div>
+                        </div>
+                        <div class="client_info_row">
+                            <div class="inputBox notes">
+                                <textarea placeholder=" " name="notes" id="clientNotes" class="box_glass_effect"></textarea>
                                 <label for="clientNotes">Poznámky</label>
                             </div>
-                            
                         </div>
-                        
+                        <button type="submit" class="text">Odeslat rezervaci</button>
                     </form>
+                    <p class="text" id="submitControlMessage"></p>
                 </section>
-
-                
             </section>
-
-            
-
-            <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const calendarEl = document.getElementById('calendar');
-
-                const calendar = new FullCalendar.Calendar(calendarEl, {
-                    locale: 'cs',
-
-                    initialView: 'timeGridWeek',
-
-                    headerToolbar: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'timeGridDay,timeGridWeek,dayGridMonth'
-                    },
-
-                    buttonText: {
-                        today: "Dnes",
-                        week: "Týden",
-                        day: "Den",
-                        month: "Měsíc"
-                    },
-                    
-                    expandRows: false,
-                    height: 'auto',
-                    firstDay: 1,
-
-                    slotMinTime: '06:00:00',
-                    slotMaxTime: '23:00:00',
-
-                    slotDuration: '01:00:00',
-                    slotLabelInterval: '01:00',
-
-                    allDaySlot: false,
-
-                    events: 'events.php'
-
-                    
-
-                });
-
-                calendar.render();
-            });
-            </script>
-
-
-
-
-
-
         </div>
     </main>
-
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
     <?php require "assets/footer.php"; ?>
     <script src="js/header.js"></script>
     <script src="js/general.js"></script>
+    <script src="js/rezervation.js"></script>
 </body>
 </html>
 
