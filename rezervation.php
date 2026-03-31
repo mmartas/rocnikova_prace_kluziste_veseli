@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="query/header-query.css">
     <link rel="stylesheet" href="query/footer-query.css">
     <link rel="stylesheet" href="query/general-query.css">
+    <link rel="stylesheet" href="query/rezervation-query.css">
     
     <title>Kluziště v centru | Rezervace</title>
 
@@ -29,6 +30,7 @@
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/locales-all.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction/index.global.min.js"></script>
 
 </head>
 <body>

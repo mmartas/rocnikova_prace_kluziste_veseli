@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         initialView: 'timeGridWeek',
 
+        dateClick: function(info) {
+            calendar.changeView('timeGridDay', info.date);
+        },
+
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',

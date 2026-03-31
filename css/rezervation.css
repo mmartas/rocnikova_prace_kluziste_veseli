@@ -1,5 +1,5 @@
 .fc {
-    width: 80%;
+    width: 100%;
     font-family: 'Anton', sans-serif;
     color: var(--white-color);
     margin: 0 auto;
@@ -90,9 +90,11 @@
     background-color: var(--red-color-lighter);
 }
 
+.fc .fc-timegrid-slot {
+    height: 50px;
+}
 
 .rezervation_formular form {
-    width: 40%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -103,9 +105,9 @@
 .client_info_row {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .rezervation_formular form .client_info_row .inputBox {
@@ -142,7 +144,7 @@
 
 .rezervation_formular form .client_info_row .inputBox label {
     position: absolute;
-    top: 12px;
+    top: 13px;
     left: 20px;
     cursor: text;
     transition: all 0.3s ease-out;

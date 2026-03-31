@@ -1,0 +1,20 @@
+@media (max-width: 660px){
+    .fc .fc-toolbar.fc-header-toolbar {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+        order: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 566px){
+    .client_info_row {
+        justify-content: center;
+    }
+}

@@ -128,10 +128,8 @@
                 
             </section>
             <section>
-                <p class="text">Provozní doba se<span> může lišit </span>v závislosti na poptávce, počasí a dalších faktorech ovlivňující provoz kluziště, proto <a href="">sledujte především aktuální rozpis ledu!</a></p>
-                <p class="text">Ledovou plochu si můžete pronajmout <a href="">ZDE!</a></p>
+                <p class="text">Provozní doba se<span> může lišit </span>v závislosti na poptávce, počasí a dalších faktorech ovlivňující provoz kluziště, proto <a href="rezervation.php">sledujte především aktuální rozpis ledu!</a></p>
             </section>
-            
 
             <!-- provozní doba ostatních služeb -->
             <section class="operating_hours operating_hours_next_services one_container">
