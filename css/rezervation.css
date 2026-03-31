@@ -121,7 +121,7 @@
 }
 
 .rezervation_formular form .client_info_row .inputBox input:focus,
-.rezervation_formular form .client_info_row .inputBox input:not(:placeholder-shown),
+.rezervation_formular form .client_info_row .inputBox input:valid,
 .rezervation_formular form .client_info_row .inputBox textarea:focus,
 .rezervation_formular form .client_info_row .inputBox textarea:not(:placeholder-shown) {
     border: 1px solid var(--red-color-lighter);
