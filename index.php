@@ -140,6 +140,22 @@
                         <img src="images/skolni-akce-napajedla_800.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
+
+                <section class="skate_rental one_section">
+                    <div class="text_section box_glass_effect one_section_right_side">
+                        <div class="wrapper reveal">
+                            <h2 class=" title text_color_gradient">převlékárna</h2>
+                            <p class="text">Převlékárna je návštěvníkům k dispozici po celou dobu provozu kluziště a nabízí pohodlné zázemí pro přípravu před vstupem na led. Najdete zde lavičky pro přezutí, dostatek prostoru i možnost odložení osobních věcí.
+
+                            Prostor je pravidelně udržován, aby byl čistý a příjemný pro všechny návštěvníky. Doporučujeme přijít s menší časovou rezervou, zejména ve vytížených hodinách, abyste se mohli v klidu připravit a užít si bruslení bez spěchu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="photo_group one_section_left_side">
+                        <img src="images/pronajem-plochy-napajedla_800.jpg" alt="" class="left_photo_clip">
+                    </div>
+                </section>
+
             </section>
             <span class="decoration_red_line"></span>
         </div>
