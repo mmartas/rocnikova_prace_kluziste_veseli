@@ -35,9 +35,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         allDaySlot: false,
 
-        events: 'events.php'
+        events: 'events.php',
 
-        
+        /* nezalomení hlavičky "po 11.4." při responzivitě */
+        dayHeaderContent: function(arg) {
+            const date = arg.date;
+
+            const day = date.toLocaleDateString('cs-CZ', { weekday: 'short' });
+            const fullDate = date.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric' });
+
+            return {
+                html: `
+                    <div class="day-header">
+                        <span class="day-name">${day}</span>
+                        <span class="day-date">${fullDate}</span>
+                    </div>
+                `
+            };
+        },
 
     });
 
@@ -77,4 +92,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-            
+

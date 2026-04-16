@@ -17,4 +17,11 @@
     .client_info_row {
         justify-content: center;
     }
+
+    /* nezalomení hlavičky "po 11.4." při responzivitě */
+    .day-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

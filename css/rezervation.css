@@ -86,6 +86,7 @@
 .fc .fc-timegrid-col.fc-day-today {
     background-color: #ffabb6;
 }
+
 .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
     background-color: var(--red-color-lighter);
 }
@@ -175,3 +176,4 @@
     background-color: var(--red-color-lighter);
     cursor: pointer;
 }
+
