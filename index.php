@@ -36,8 +36,12 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <h1 class="title reveal delay"><span class="underline_color_gradient">Přijďte</span> si zabruslit <br>na <span class="underline_color_gradient">kluziště</span> ve<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
                     </div>
-                    <div class="photo_group one_section_right_side">
-                        <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
+                    <div class="photo_group one_section_right_side" id="titleCarousel">
+                        <img src="images/kluziste1.jpg" alt="" class="right_photo_clip active">
+                        <img src="images/kluziste2.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste3.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste4.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste5.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
             </section>
@@ -56,7 +60,8 @@
                         </div>
                     </div>
                     <div class="photo_group one_section_left_side">
-                        <img src="images/verejne-brusleni-napajedla_800.jpg" alt="" class="left_photo_clip">
+                        <img src="images/verejne_brusleni1.png" alt="" class="left_photo_clip">
+                        
                     </div>
                 </section>
 
@@ -152,7 +157,7 @@
                         </div>
                     </div>
                     <div class="photo_group one_section_left_side">
-                        <img src="images/pronajem-plochy-napajedla_800.jpg" alt="" class="left_photo_clip">
+                        <img src="images/prevlekarna1.jpg" alt="" class="left_photo_clip">
                     </div>
                 </section>
 
@@ -165,5 +170,6 @@
     <?php require "assets/footer.php"; ?>
     <script src="js/header.js"></script>
     <script src="js/general.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

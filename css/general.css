@@ -194,6 +194,23 @@ main {
 
 .main_container .one_container .one_section .photo_group {
     width: 34%;
+    height: 700px;
+}
+#titleCarousel {
+    position: relative;
+}
+#titleCarousel img{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+}
+
+.main_container .one_container .one_section .photo_group img{
+    width: 800px;
+}
+#titleCarousel img.active{
+    opacity: 1;
 }
 
 .main_container .introduction {
