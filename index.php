@@ -42,6 +42,7 @@
                         <img src="images/kluziste3.jpg" alt="" class="right_photo_clip">
                         <img src="images/kluziste4.jpg" alt="" class="right_photo_clip">
                         <img src="images/kluziste5.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste6.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
             </section>
@@ -60,8 +61,7 @@
                         </div>
                     </div>
                     <div class="photo_group one_section_left_side">
-                        <img src="images/verejne_brusleni1.png" alt="" class="left_photo_clip">
-                        
+                        <img src="images/verejne_brusleni1.jpg" alt="" class="left_photo_clip">
                     </div>
                 </section>
 
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="photo_group one_section_right_side">
-                        <img src="images/pronajem-plochy-napajedla_800.jpg" alt="" class="right_photo_clip">
+                        <img src="images/pronajem1.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
 
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="photo_group one_section_left_side">
-                        <img src="images/skolni-akce-napajedla_800.jpg" alt="" class="left_photo_clip">
+                        <img src="images/skolni_akce1.jpg" alt="" class="left_photo_clip">
                     </div>
                 </section>
             </section>
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                     <div class="photo_group one_section_right_side">
-                        <img src="images/verejne-brusleni-napajedla_800.jpg" alt="" class="right_photo_clip">
+                        <img src="images/brouseni_brusli1.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
 
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <div class="photo_group one_section_left_side">
-                        <img src="images/pronajem-plochy-napajedla_800.jpg" alt="" class="left_photo_clip">
+                        <img src="images/pujcovani_brusli4.jpg" alt="" class="left_photo_clip">
                     </div>
                 </section>
 
@@ -142,7 +142,7 @@
                         </div>
                     </div>
                     <div class="photo_group one_section_right_side">
-                        <img src="images/skolni-akce-napajedla_800.jpg" alt="" class="right_photo_clip">
+                        <img src="images/obcerstveni1.png" alt="" class="right_photo_clip">
                     </div>
                 </section>
 

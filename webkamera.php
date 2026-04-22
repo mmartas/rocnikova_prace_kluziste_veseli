@@ -49,6 +49,7 @@
                     <iframe id="blockrandom" name="iframe" src="https://g0.ipcamlive.com/player/player.php?alias=65645d56307e4" width="100%" height="500px" scrolling="auto" frameborder="1" title="Web Kamera" class="box_glass_effect"></iframe>
                 </section>
             </section>
+            <span class="decoration_red_line"></span>
         </div>
     </main>
 
