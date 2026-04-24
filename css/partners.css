@@ -5,7 +5,7 @@
 }
 
 .main_partners .partners .wrapper img {
-    width: 250px;
+    width: 125px;
 }
 
 .main_partners.one_container .text_section{
@@ -50,4 +50,8 @@
 
 .main_partners.one_container .partners.one_section .text_section:hover h2 {
     background-position: 0 100%;
+}
+
+.partners_container {
+    flex-wrap: wrap;
 }
