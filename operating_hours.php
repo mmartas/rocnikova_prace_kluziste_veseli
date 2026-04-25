@@ -35,8 +35,10 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <h1 class="title reveal delay"><span class="underline_color_gradient">Zkontroluj</span><br> jestli máme <span class="underline_color_gradient">otevřeno</span><br><span class="text_color_gradient">a přijď ještě dnes!</span></h1>
                     </div>
-                    <div class="photo_group one_section_right_side">
-                        <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
+                    <div class="photo_group one_section_right_side" id="titleCarousel">
+                        <img src="images/verejne_brusleni7.jpg" alt="" class="right_photo_clip active">
+                        <img src="images/verejne_brusleni8.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste7.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
             </section>

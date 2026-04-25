@@ -44,8 +44,10 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <h1 class="title reveal delay"><span class="underline_color_gradient">Pronajmi</span> si kluziště <span class="underline_color_gradient">pro<br> sebe</span> a užij si to na<br> <span class="text_color_gradient">maximum!</span></h1>
                     </div>
-                    <div class="photo_group one_section_right_side">
-                        <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
+                    <div class="photo_group one_section_right_side" id="titleCarousel">
+                        <img src="images/pronajem1.jpg" alt="" class="right_photo_clip active">
+                        <img src="images/pronajem2.jpg" alt="" class="right_photo_clip">
+                        <img src="images/prevlekarna2.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
             </section>

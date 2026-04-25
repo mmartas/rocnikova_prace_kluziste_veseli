@@ -1,6 +1,6 @@
 .fc {
     width: 100%;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--white-color);
     margin: 0 auto;
 }
@@ -73,28 +73,31 @@
     color: black;
 }
 
-/* víkend */
-.fc-day-sat, 
-.fc-day-sun {
-  background-color: #cacaca;
-}
-
-/* dnešní den */
-.fc-day-today {
-    background-color: var(--red-color-lighter);
-}
-.fc .fc-timegrid-col.fc-day-today {
-    background-color: #ffabb6;
-}
-
-.fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
-    background-color: var(--red-color-lighter);
-}
-
 .fc .fc-timegrid-slot {
     height: 50px;
 }
 
+.fc-col-header-cell.fc-day.fc-day-past {
+    background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+/* víkend */
+.fc-day-sat, 
+.fc-day-sun {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+/* dnešní den */
+.fc .fc-day-today .fc-scrollgrid-sync-inner {
+    border-top: 2px solid var(--red-color);
+    box-shadow: inset 0 19px 15px -13px var(--red-color-lighter);
+}
+.fc .fc-timegrid-col.fc-day-today {
+  background-color: transparent;
+}
+
+
+/* objednací formulář */
 .rezervation_formular form {
     margin: 0 auto;
     display: flex;
