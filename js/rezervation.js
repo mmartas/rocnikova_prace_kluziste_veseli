@@ -36,13 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
         allDaySlot: false,
 
         eventSources: [
-            // "slots.php",
             "events.php"
         ],
 
 
         eventClick: function(info){
-            if (info.event.extendedProps.type !== "rent") return;
+            if (info.event.extendedProps.type !== "free") return;
 
             openModal(info.event.startStr);
         },
