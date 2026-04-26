@@ -63,50 +63,60 @@
                     <div id="calendar" class="box_glass_effect"></div>
                 </section>
 
-                <h1 class="title text_color_gradient">rezervační formulář</h1>
-                <section class="one_section rezervation_formular text">
-                    <form id="rezervationForm">
-                        <div class="client_info_row">
-                            <div class="inputBox">
-                                <input placeholder=" " type="text" name="name" class="box_glass_effect" id="clientName" required>
-                                <label for="clientName">Jméno</label>
-                            </div>
-                            <div class="inputBox">
-                                <input placeholder=" " type="text" name="surname" class="box_glass_effect" id="clientSurname" required>
-                                <label for="clientSurname">Příjmení</label>
-                            </div>
-                        </div>
-                        <div class="client_info_row">
-                            <div class="inputBox">
-                                <input placeholder=" " type="email" name="email" id="clientEmail" class="box_glass_effect" required>
-                                <label for="clientEmail">Email</label>
-                            </div>
-                            <div class="inputBox">
-                                <input placeholder=" " type="tel" name="tel" id="clientTel" class="box_glass_effect" required>
-                                <label for="clientTel">Tel. číslo</label>
-                            </div>
-                        </div>
-                        <div class="client_info_row">
-                            <div class="inputBox">
-                                <input type="date" name="date" id="clientDate" class="box_glass_effect" required>
-                            </div>
-                            <div class="inputBox">
-                                <input type="time" name="time" id="clientTime" class="box_glass_effect" required>
-                            </div>
-                        </div>
-                        <div class="client_info_row">
-                            <div class="inputBox notes">
-                                <textarea placeholder=" " name="notes" id="clientNotes" class="box_glass_effect"></textarea>
-                                <label for="clientNotes">Poznámky</label>
-                            </div>
-                        </div>
-                        <button type="submit" class="text">Odeslat rezervaci</button>
-                    </form>
-                    <p class="text" id="submitControlMessage"></p>
-                </section>
+                <!-- <button id="open">spust</button> -->
             </section>
         </div>
     </main>
+
+    <div class="modal_overlay" id="modalOverlay">
+        <div class="one_section rezervation_formular text box_glass_effect">
+            <div class="form_head"> 
+                <h2 class="title text_color_gradient">Rezervační formulář</h2>
+                <div class="cross" id="closeCross">
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- <button id="closeCross">zavrit</button> -->
+            </div>
+            
+            <form id="rezervationForm">
+                <div class="client_info_row">
+                    <div class="inputBox">
+                        <input placeholder=" " type="text" name="name" id="clientName" required>
+                        <label for="clientName">Jméno</label>
+                    </div>
+                    <div class="inputBox">
+                        <input placeholder=" " type="text" name="surname" id="clientSurname" required>
+                        <label for="clientSurname">Příjmení</label>
+                    </div>
+                </div>
+                <div class="client_info_row">
+                    <div class="inputBox">
+                        <input placeholder=" " type="email" name="email" id="clientEmail" required>
+                        <label for="clientEmail">Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <input placeholder=" " type="tel" name="phone" id="clientTel" required>
+                        <label for="clientTel">Tel. číslo</label>
+                    </div>
+                </div>
+                <div class="client_info_row">
+                    <p id="selectedDate"></p>
+                    <input type="hidden" name="date" id="selectedDateInput">
+                </div>
+                <div class="client_info_row">
+                    <div class="inputBox notes">
+                        <textarea placeholder=" " name="note" id="clientNotes"></textarea>
+                        <label for="clientNotes">Poznámky</label>
+                    </div>
+                </div>
+                <button type="submit" class="text">Odeslat rezervaci</button>
+            </form>
+        </div>
+    </div>
+
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
     <?php require "assets/footer.php"; ?>
     <script src="js/header.js"></script>

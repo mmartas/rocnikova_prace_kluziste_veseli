@@ -1,11 +1,21 @@
 <?php
 
-$file = 'reservations.json';
+header('Content-Type: application/json');
 
-if (file_exists($file)) {
-    echo file_get_contents($file);
-} else {
-    echo json_encode([]);
+$conn = new mysqli("localhost", "root", "", "kalendar");
+
+$result = $conn->query("SELECT * FROM reservations");
+
+$events = [];
+
+while ($row = $result->fetch_assoc()){
+    $events[] = [
+        "title" => "Obsazeno: " . $row['surname'],
+        "start" => $row['date'],
+        "color" => "red"
+    ];
 }
+
+echo json_encode($events);
 
 

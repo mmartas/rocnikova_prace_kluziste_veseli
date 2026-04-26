@@ -1,29 +1,31 @@
 <?php
+$conn = new mysqli("localhost", "root", "", "kalendar");
 
-$data = json_decode(file_get_contents("php://input"), true);
+$date = $_POST['date'];
 
-$file = 'reservations.json';
+// kontrola
+$check = $conn->query("SELECT * FROM reservations WHERE date = '$date'");
 
-// načti existující data
-if (file_exists($file)) {
-    $current = json_decode(file_get_contents($file), true);
-} else {
-    $current = [];
+if ($check->num_rows > 0) {
+    echo json_encode(["success" => false]);
+    exit;
 }
 
-// přidej novou rezervaci
-$current[] = [
-    "title" => "Obsazeno",
-    "start" => $data["date"] . "T" . $data["time"],
-    "end"   => date("Y-m-d\\TH:i:s", strtotime($data["date"] . " " . $data["time"] . " +1 hour")),
-    "name"  => $data["name"],
-    "surname" => $data["surname"],
-    "email" => $data["email"],
-    "tel" => $data["tel"],
-    "notes" => $data["notes"]
-];
+//uložení
+$stmt = $conn->prepare("
+    INSERT INTO reservations (name, surname, email, phone, note, date) VALUES (?, ?, ?, ?, ?, ?)
+");
 
-// ulož zpět
-file_put_contents($file, json_encode($current, JSON_PRETTY_PRINT));
+$stmt->bind_param(
+    "ssssss",
+    $_POST['name'],
+    $_POST['surname'],
+    $_POST['email'],
+    $_POST['phone'],
+    $_POST['note'],
+    $date
+);
 
-echo json_encode(["status" => "ok"]);
+$stmt->execute();
+
+echo json_encode(["success" => true]);
