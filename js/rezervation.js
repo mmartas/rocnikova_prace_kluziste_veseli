@@ -1,3 +1,6 @@
+const modal = document.getElementById("modalOverlay");
+const closeCross = document.getElementById("closeCross");
+
 document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
 
@@ -35,15 +38,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         allDaySlot: false,
 
-        eventSources: [
-            "events.php"
-        ],
+        events: "events.php",
 
+        eventClassNames: function(arg) {
+            if (arg.event.extendedProps.type === "rent") {
+                return ["rent-event"];
+            }
+            return [];
+        },
 
         eventClick: function(info){
-            if (info.event.extendedProps.type !== "free") return;
+            const type = info.event.extendedProps.type;
+            const booked = info.event.extendedProps.booked;
 
-            openModal(info.event.startStr);
+            if (type !== "rent" || booked) {
+                return;
+            }
+
+            openModal(info.event.startStr, info.event.endStr);
         },
 
         /* nezalomení hlavičky "po 11.4." při responzivitě */
@@ -67,13 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     calendar.render();
 
-    // 🔥 FORM SUBMIT
+    // formulář
     document.getElementById("rezervationForm").addEventListener("submit", function(e) {
         e.preventDefault();
-
-        console.log("jede to");
-
-
+        //console.log("jede to");
         const data = new FormData(this);
 
         fetch("save-rezervation.php", {
@@ -94,25 +103,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/** */
-// const openBtn = document.getElementById("open");
-// openBtn.addEventListener("click", () => {
-//     modal.style.display = "flex";
-//     document.body.classList.add("no-scroll");
-// })
-/** */
-
 /**
  * otevření a zavření modalu
  */
-const modal = document.getElementById("modalOverlay");
-const closeBtn = document.getElementById("closeCross");
-function openModal(date) {
+function openModal(start, end) {
     modal.style.display = "flex";
-    document.getElementById("selectedDate").textContent = date;
-    document.getElementById("selectedDateInput").value = date;
+    document.body.classList.add("no-scroll");
+
+    const s = new Date(start);
+    const e = new Date(end);
+
+    const startTime =
+        s.getHours().toString().padStart(2, "0") + ":" +
+        s.getMinutes().toString().padStart(2, "0");
+
+    const endTime =
+        e.getHours().toString().padStart(2, "0") + ":" +
+        e.getMinutes().toString().padStart(2, "0");
+
+    const dateText =
+        s.getDate() + "." +
+        (s.getMonth() + 1) + "." +
+        s.getFullYear();
+
+    document.getElementById("selectedDate").textContent =
+        dateText + " " + startTime + " - " + endTime;
+    document.getElementById("selectedDateInput").value = start;
 }
-closeBtn.addEventListener("click", () => {
+
+closeCross.addEventListener("click", () => {
     modal.style.display = "none";
     document.body.classList.remove("no-scroll");
 });
@@ -121,8 +140,13 @@ window.addEventListener("click", (e) => {
         modal.style.display = "none";
         document.body.classList.remove("no-scroll");
     }
-    
 });
+
+if(modal.style.display != "flex"){
+    document.body.classList.remove("no-scroll");
+}
+
+
 
 
 

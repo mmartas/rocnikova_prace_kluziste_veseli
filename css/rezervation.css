@@ -80,14 +80,20 @@
 .fc-col-header-cell.fc-day.fc-day-past {
     background-color: rgba(0, 0, 0, 0.04) !important;
 }
-
+/* eventy */
+.rent-event {
+    cursor: pointer;
+}
 /* víkend */
 .fc-day-sat, 
 .fc-day-sun {
   background-color: rgba(0, 0, 0, 0.04) !important;
 }
 
-/* dnešní den */
+/*
+    dnešní den
+*/
+/* denní a týdenní rozložení */
 .fc .fc-day-today .fc-scrollgrid-sync-inner {
     border-top: 2px solid var(--red-color);
     box-shadow: inset 0 19px 15px -13px var(--red-color-lighter);
@@ -95,9 +101,14 @@
 .fc .fc-timegrid-col.fc-day-today {
   background-color: transparent;
 }
+/* měsíční rozložení */
+.fc .fc-daygrid-day.fc-day-today {
+  background: transparent !important;
+}
 
-
-/* objednací formulář - modal*/
+/*
+    objednací formulář - modal
+*/
 .no-scroll {
   overflow: hidden;
   padding-right: 15px;

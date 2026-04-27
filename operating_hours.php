@@ -130,7 +130,7 @@
                 
             </section>
             <section>
-                <p class="text">Provozní doba se<span> může lišit </span>v závislosti na poptávce, počasí a dalších faktorech ovlivňující provoz kluziště, proto <a href="rezervation.php">sledujte především aktuální rozpis ledu!</a></p>
+                <p class="text">Provozní doba se<span> může lišit </span>v závislosti na poptávce, počasí a dalších faktorech ovlivňující provoz kluziště, proto <a href="rezervation.php" class="box_glass_effect_red">sledujte především aktuální rozpis ledu!</a></p>
             </section>
             <span class="decoration_red_line"></span>
 

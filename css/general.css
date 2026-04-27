@@ -234,14 +234,13 @@ main {
 }
 
 section p a {
-    border: 1px solid var(--red-color-lighter);
-    border-radius: 30px;
-    padding: 0.2rem 0.7rem;
-    background-color: var(--red-color-lighter);
     color: var(--white-color);
+    padding: 1px 6px;
+    border-radius: 10px;
+    text-decoration: none;
     text-wrap: nowrap;
+    transition: all 0.3s;
 }
 section p a:hover {
     background-color: var(--red-color);
-    transition: all 0.4s ease;
 }

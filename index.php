@@ -56,7 +56,7 @@
                             <h2 class="title text_color_gradient">bruslení pro veřejnost</h2>
                             <p class="text">Přijďte si zabruslit na naše městské kluziště a užít si příjemnou atmosféru na ledě. Veřejné bruslení je určeno pro děti, dospělé i seniory – ať už jste začátečník nebo zkušený bruslař. Ledová plocha je pravidelně upravována, takže se můžete těšit na kvalitní a bezpečný povrch. K dispozici je šatna, i hrazdičky pro děti.
 
-                            Aktuální rozpis veřejného bruslení najdete <a href="operating_hours.php">zde</a>. Stačí si vzít brusle (nebo si je půjčit u nás) a dorazit – o zbytek se postaráme my.
+                            Aktuální rozpis veřejného bruslení najdete <a href="operating_hours.php" class="box_glass_effect_red">zde.</a> Stačí si vzít brusle (nebo si je půjčit u nás) a dorazit – o zbytek se postaráme my.
                             </p>
                         </div>
                     </div>

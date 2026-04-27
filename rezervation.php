@@ -55,7 +55,7 @@
 
             <section class="rezervation one_container">
                 <section>
-                    <p class="text">Formulář pro objednání najdete pod rezervačním kalendářem níže.</p>
+                    <p class="text">Pro objednání klikněte na Vámi zvolený volný termín s možností pronájmu.</p>
                 </section>
                 <h1 class="title text_color_gradient">rezervační kalendář</h1>
                 
@@ -63,7 +63,7 @@
                     <div id="calendar" class="box_glass_effect"></div>
                 </section>
 
-                <!-- <button id="open">spust</button> -->
+                <span class="decoration_red_line"></span>
             </section>
         </div>
     </main>
