@@ -1,5 +1,11 @@
 const modal = document.getElementById("modalOverlay");
-const closeCross = document.getElementById("closeCross");
+const closeCross = document.querySelector(".closeCross");
+
+const formSide = document.querySelector(".rezervation_formular");
+const messageSide = document.querySelector(".submit_message");
+const messageContent = document.getElementById("message_content");
+
+const errorMessage = document.getElementById("error_message");
 
 document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
@@ -82,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // formulář
     document.getElementById("rezervationForm").addEventListener("submit", function(e) {
         e.preventDefault();
-        //console.log("jede to");
+        // console.log("jede to");
         const data = new FormData(this);
 
         fetch("save-rezervation.php", {
@@ -92,11 +98,30 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(res => res.json())
         .then(res => {
             if (res.success) {
-                alert("Rezervace uložená");
-                modal.style.display = "none";
+
+                formSide.style.display = "none";
+
+                const name = document.getElementById("clientName").value;
+                const surname = document.getElementById("clientSurname").value;
+                const email = document.getElementById("clientEmail").value;
+                const date = document.getElementById("selectedDate").textContent;
+
+                messageSide.style.display = "block";
+                messageContent.innerHTML = `
+                    <h3>Rezervace proběhla úspěšně.</h3>
+                    <p>Těšíme se na Vaši návštěvu!</p>
+                    
+                    <p><strong>Jméno:</strong> ${name} ${surname}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p><strong>Termín:</strong> ${date}</p>
+                    
+                `;
+
+                // alert("Rezervace uložená");
+                // modal.style.display = "none";
                 calendar.refetchEvents();
             } else {
-                alert("Termín je obsazený");
+                errorMessage.textContent = "Došlo k chybě, obnovte stránku a zkuste to znovu. ";
             }
         });
     });
