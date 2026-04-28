@@ -119,7 +119,14 @@
 
             <div class="submit_message modal_box_head">
                 <div id="message_content"></div>
-                <button class="text closeCross">zavřít</button>
+                <div class="form_head">
+                    <div class="cross closeCross">
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>

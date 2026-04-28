@@ -1,5 +1,5 @@
 const modal = document.getElementById("modalOverlay");
-const closeCross = document.querySelector(".closeCross");
+const closeCross = document.querySelectorAll(".closeCross");
 
 const formSide = document.querySelector(".rezervation_formular");
 const messageSide = document.querySelector(".submit_message");
@@ -156,10 +156,13 @@ function openModal(start, end) {
     document.getElementById("selectedDateInput").value = start;
 }
 
-closeCross.addEventListener("click", () => {
-    modal.style.display = "none";
-    document.body.classList.remove("no-scroll");
+closeCross.forEach(cross => {
+    cross.addEventListener("click", () => {
+        modal.style.display = "none";
+        document.body.classList.remove("no-scroll");
+    });
 });
+
 window.addEventListener("click", (e) => {
     if(e.target === modal){
         modal.style.display = "none";
@@ -170,8 +173,3 @@ window.addEventListener("click", (e) => {
 if(modal.style.display != "flex"){
     document.body.classList.remove("no-scroll");
 }
-
-
-
-
-
