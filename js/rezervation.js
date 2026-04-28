@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const email = document.getElementById("clientEmail").value;
                 const date = document.getElementById("selectedDate").textContent;
 
-                messageSide.style.display = "block";
+                messageSide.style.display = "flex";
                 messageContent.innerHTML = `
                     <h3>Rezervace proběhla úspěšně.</h3>
                     <p>Těšíme se na Vaši návštěvu!</p>
@@ -127,10 +127,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+if(modal.style.display != "flex"){
+    document.body.classList.remove("no-scroll");
+}
 
 /**
- * otevření a zavření modalu
+ * OTEVŘENÍ A ZAVŘENÍ MODALU
  */
+// otevření modalu
 function openModal(start, end) {
     modal.style.display = "flex";
     document.body.classList.add("no-scroll");
@@ -156,20 +160,19 @@ function openModal(start, end) {
     document.getElementById("selectedDateInput").value = start;
 }
 
-closeCross.forEach(cross => {
-    cross.addEventListener("click", () => {
-        modal.style.display = "none";
-        document.body.classList.remove("no-scroll");
-    });
-});
-
-window.addEventListener("click", (e) => {
-    if(e.target === modal){
-        modal.style.display = "none";
-        document.body.classList.remove("no-scroll");
-    }
-});
-
-if(modal.style.display != "flex"){
+// zavření modalu
+function closeModal() {
+    modal.style.display = "none";
     document.body.classList.remove("no-scroll");
 }
+
+closeCross.forEach(cross => {
+    cross.addEventListener("click", closeModal);
+});
+window.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+});
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+});
+
