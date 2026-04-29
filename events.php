@@ -1,8 +1,10 @@
 <?php
 
+require "assets/db.php";
+
 header('Content-Type: application/json');
 
-$conn = new mysqli("localhost", "root", "", "kalendar");
+$conn = getDb();
 
 // načti eventy
 $eventsRes = $conn->query("SELECT * FROM events");

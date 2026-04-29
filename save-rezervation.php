@@ -1,5 +1,7 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "kalendar");
+require "assets/db.php";
+
+$conn = getDb();
 
 $date = $_POST['date'];
 

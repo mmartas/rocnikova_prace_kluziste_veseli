@@ -73,7 +73,7 @@
             <div class="rezervation_formular modal_box_head">
                 <div class="form_head">
                     <h2 class="title text_color_gradient">Rezervační formulář</h2>
-                    <div class="cross closeCross">
+                    <div class="cross closeCross box_glass_effect_red">
                         <div>
                             <span></span>
                             <span></span>
@@ -103,6 +103,7 @@
                         </div>
                     </div>
                     <div class="client_info_row">
+                        <p>Vámi zvolený termín: </p>
                         <p id="selectedDate"></p>
                         <input type="hidden" name="date" id="selectedDateInput">
                     </div>
@@ -118,8 +119,17 @@
             </div>
 
             <div class="submit_message modal_box_head">
+                <div class="form_head">
+                    <h2 class="title">Rezervace proběhla úspěšně.</h2>
+                    <div class="cross closeCross box_glass_effect_red">
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <p>Těšíme se na Vaši návštěvu!</p>
                 <div id="message_content"></div>
-                <button class="closeCross box_glass_effect_red text">zavřít</button>
             </div>
             
         </div>

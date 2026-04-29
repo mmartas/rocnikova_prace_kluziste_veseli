@@ -4,7 +4,7 @@ const closeCross = document.querySelectorAll(".closeCross");
 const formSide = document.querySelector(".rezervation_formular");
 const messageSide = document.querySelector(".submit_message");
 const messageContent = document.getElementById("message_content");
-
+const modalWindow = document.querySelector(".modal_window")
 const errorMessage = document.getElementById("error_message");
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -47,7 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
         events: "events.php",
 
         eventClassNames: function(arg) {
-            if (arg.event.extendedProps.type === "rent") {
+            const type = arg.event.extendedProps.type;
+            const booked = arg.event.extendedProps.booked;
+
+            if (type === "rent" && !booked) {
                 return ["rent-event"];
             }
             return [];
@@ -88,39 +91,33 @@ document.addEventListener('DOMContentLoaded', function () {
     // formulář
     document.getElementById("rezervationForm").addEventListener("submit", function(e) {
         e.preventDefault();
-        // console.log("jede to");
+        
         const data = new FormData(this);
 
-        fetch("save-rezervation.php", {
-            method: "POST",
-            body: data
-        })
-        .then(res => res.json())
+        sendReservation(data)
         .then(res => {
+
             if (res.success) {
 
                 formSide.style.display = "none";
 
-                const name = document.getElementById("clientName").value;
-                const surname = document.getElementById("clientSurname").value;
-                const email = document.getElementById("clientEmail").value;
-                const date = document.getElementById("selectedDate").textContent;
+                const formValues = getFormData();
 
                 messageSide.style.display = "flex";
                 messageContent.innerHTML = `
-                    <h3>Rezervace proběhla úspěšně.</h3>
-                    <p>Těšíme se na Vaši návštěvu!</p>
-                    
                     <p><strong>Jméno:</strong> ${name} ${surname}</p>
                     <p><strong>Email:</strong> ${email}</p>
                     <p><strong>Termín:</strong> ${date}</p>
-                    
                 `;
 
-                // alert("Rezervace uložená");
-                // modal.style.display = "none";
+                
+                modalWindow.classList.add("active");
+                
+
                 calendar.refetchEvents();
             } else {
+                errorMessage.style.display = "flex";
+                modalWindow.classList.add("wrong");
                 errorMessage.textContent = "Došlo k chybě, obnovte stránku a zkuste to znovu. ";
             }
         });
@@ -131,9 +128,16 @@ if(modal.style.display != "flex"){
     document.body.classList.remove("no-scroll");
 }
 
-/**
- * OTEVŘENÍ A ZAVŘENÍ MODALU
- */
+closeCross.forEach(cross => {
+    cross.addEventListener("click", closeModal);
+});
+window.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+});
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+});
+
 // otevření modalu
 function openModal(start, end) {
     modal.style.display = "flex";
@@ -166,13 +170,22 @@ function closeModal() {
     document.body.classList.remove("no-scroll");
 }
 
-closeCross.forEach(cross => {
-    cross.addEventListener("click", closeModal);
-});
-window.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
-});
-document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeModal();
-});
+// uložení rezervace
+function sendReservation(data) {
+    return fetch("save-rezervation.php", {
+        method: "POST",
+        body: data
+    })
 
+    .then(res => res.json());
+}
+
+// načtení vyplněných hodnot z formuláře
+function getFormData() {
+    return {
+        name: document.getElementById("clientName").value,
+        surname: document.getElementById("clientSurname").value,
+        email: document.getElementById("clientEmail").value,
+        date: document.getElementById("selectedDate").textContent
+    };
+}

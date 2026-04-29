@@ -1,4 +1,4 @@
-@media (max-width: 660px){
+@media (max-width: 740px){
     .fc .fc-toolbar.fc-header-toolbar {
         flex-wrap: wrap;
         gap: 1rem;
@@ -10,6 +10,16 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+    }
+}
+
+@media (max-width: 650px){
+    .modal_window .modal_box_head .form_head {
+        flex-direction: column;
+    }
+
+    .modal_window .modal_box_head .form_head h2 {
+        order: 2;
     }
 }
 
