@@ -1,5 +1,5 @@
 // šipka pro scroll nahoru
-let ArrowToScroll = document.getElementById("arrow_top_scroll")
+const ArrowToScroll = document.getElementById("arrow_top_scroll")
 window.addEventListener("scroll", function(event){
     if(this.window.scrollY > 2000){
         ArrowToScroll.classList.add("active")

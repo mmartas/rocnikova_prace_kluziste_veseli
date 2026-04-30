@@ -40,10 +40,12 @@ while ($row = $eventsRes->fetch_assoc()) {
 
         "color" => $isBooked
             ? "red"
-            : match($row["type"]) {
+            : match($row["type"] ?? null) {
                 "rent" => "orange",
                 "public" => "blue",
-                default => "gray"
+                "school" => "goldenrod",
+                "maintenance" => "gray",
+                default => "brown"
             }
     ];
 }

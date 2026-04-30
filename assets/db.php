@@ -1,5 +1,5 @@
 <?php
-
+// připojení do databáze
 function getDb() {
     $conn = new mysqli("localhost", "root", "", "kalendar");
 

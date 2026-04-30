@@ -165,6 +165,7 @@
     cursor: pointer;
     border-radius: 100%;
     padding: 20px;
+    position: relative;
 }
 .modal_window .modal_box_head .form_head .cross:hover span {
     background-color: var(--red-color-lighter);
@@ -175,13 +176,17 @@
     width: 25px;
     background-color: var(--white-color);
     transition: all 0.3s;
+    position: absolute;
+    transform-origin: center;
+    top: 50%;
+    left: 50%;
 }
 .modal_window .modal_box_head .form_head .cross span:first-child {
-    transform: rotate(45deg) translate(0px, 2px);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .modal_window .modal_box_head .form_head .cross span:last-child {
-    transform: rotate(-45deg) translate(0px, -1px);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 

@@ -36,7 +36,7 @@
             </div>
         </section>
         <section class="copyright_section">
-            <p>Copyright © 2025 Kluziště Veselí nad Moravou. All Rights Reserved.</p>
+            <p>&copy; 2026 | Web vytvořil Martin Šupler</p>
         </section>
     </div>
 </footer>

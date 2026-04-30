@@ -7,16 +7,24 @@ const messageContent = document.getElementById("message_content");
 const modalWindow = document.querySelector(".modal_window")
 const errorMessage = document.getElementById("error_message");
 
-document.addEventListener('DOMContentLoaded', function () {
-    const calendarEl = document.getElementById('calendar');
+const calendarEl = document.getElementById('calendar');
 
+document.addEventListener('DOMContentLoaded', function () {
+    // kalendář
     const calendar = new FullCalendar.Calendar(calendarEl, {
         locale: 'cs',
 
         initialView: 'timeGridWeek',
 
-        dateClick: function(info) {
-            calendar.changeView('timeGridDay', info.date);
+        dayHeaderDidMount: function(info) {
+
+            if (info.view.type === "dayGridMonth") return;
+
+            info.el.style.cursor = "pointer";
+
+            info.el.addEventListener("click", () => {
+                calendar.changeView('timeGridDay', info.date);
+            });
         },
 
         headerToolbar: {
@@ -46,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         events: "events.php",
 
+        // cursor pointer na políčka "možnost pronájmu"
         eventClassNames: function(arg) {
             const type = arg.event.extendedProps.type;
             const booked = arg.event.extendedProps.booked;
@@ -56,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return [];
         },
 
+        // otevření modalu při kliknutí na políčko "možnost pronájmu"
         eventClick: function(info){
             const type = info.event.extendedProps.type;
             const booked = info.event.extendedProps.booked;
@@ -67,9 +77,30 @@ document.addEventListener('DOMContentLoaded', function () {
             openModal(info.event.startStr, info.event.endStr);
         },
 
+        dayCellDidMount: function(info) {
+            if (info.view.type === "dayGridMonth") {
+                info.el.style.cursor = "pointer";
+            }
+        },
+
+        dateClick: function(info) {
+            if (info.view.type === "dayGridMonth") {
+                calendar.changeView('timeGridDay', info.date);
+            }
+        },
+
         /* nezalomení hlavičky "po 11.4." při responzivitě */
         dayHeaderContent: function(arg) {
+
             const date = arg.date;
+
+            if (arg.view.type === "dayGridMonth") {
+                const day = date.toLocaleDateString('cs-CZ', { weekday: 'short' });
+
+                return {
+                    html: `<span class="day-name">${day}</span>`
+                };
+            }
 
             const day = date.toLocaleDateString('cs-CZ', { weekday: 'short' });
             const fullDate = date.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric' });
@@ -83,9 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 `
             };
         },
-
     });
-
     calendar.render();
 
     // formulář
@@ -96,96 +125,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
         sendReservation(data)
         .then(res => {
-
             if (res.success) {
-
                 formSide.style.display = "none";
 
                 const formValues = getFormData();
 
                 messageSide.style.display = "flex";
+
                 messageContent.innerHTML = `
-                    <p><strong>Jméno:</strong> ${name} ${surname}</p>
-                    <p><strong>Email:</strong> ${email}</p>
-                    <p><strong>Termín:</strong> ${date}</p>
+                    <p><strong>Jméno:</strong> ${formValues.name} ${formValues.surname}</p>
+                    <p><strong>Email:</strong> ${formValues.email}</p>
+                    <p><strong>Termín:</strong> ${formValues.date}</p>
                 `;
 
-                
                 modalWindow.classList.add("active");
+                modalWindow.classList.remove("wrong");
                 
-
                 calendar.refetchEvents();
             } else {
                 errorMessage.style.display = "flex";
+
                 modalWindow.classList.add("wrong");
+                modalWindow.classList.remove("active");
+
                 errorMessage.textContent = "Došlo k chybě, obnovte stránku a zkuste to znovu. ";
             }
         });
     });
+
+    if(modal.style.display != "flex"){
+        document.body.classList.remove("no-scroll");
+    }
+
+    closeCross.forEach(cross => {
+        cross.addEventListener("click", closeModal);
+    });
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+    });
 });
-
-if(modal.style.display != "flex"){
-    document.body.classList.remove("no-scroll");
-}
-
-closeCross.forEach(cross => {
-    cross.addEventListener("click", closeModal);
-});
-window.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
-});
-document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeModal();
-});
-
-// otevření modalu
-function openModal(start, end) {
-    modal.style.display = "flex";
-    document.body.classList.add("no-scroll");
-
-    const s = new Date(start);
-    const e = new Date(end);
-
-    const startTime =
-        s.getHours().toString().padStart(2, "0") + ":" +
-        s.getMinutes().toString().padStart(2, "0");
-
-    const endTime =
-        e.getHours().toString().padStart(2, "0") + ":" +
-        e.getMinutes().toString().padStart(2, "0");
-
-    const dateText =
-        s.getDate() + "." +
-        (s.getMonth() + 1) + "." +
-        s.getFullYear();
-
-    document.getElementById("selectedDate").textContent =
-        dateText + " " + startTime + " - " + endTime;
-    document.getElementById("selectedDateInput").value = start;
-}
-
-// zavření modalu
-function closeModal() {
-    modal.style.display = "none";
-    document.body.classList.remove("no-scroll");
-}
-
-// uložení rezervace
-function sendReservation(data) {
-    return fetch("save-rezervation.php", {
-        method: "POST",
-        body: data
-    })
-
-    .then(res => res.json());
-}
-
-// načtení vyplněných hodnot z formuláře
-function getFormData() {
-    return {
-        name: document.getElementById("clientName").value,
-        surname: document.getElementById("clientSurname").value,
-        email: document.getElementById("clientEmail").value,
-        date: document.getElementById("selectedDate").textContent
-    };
-}
