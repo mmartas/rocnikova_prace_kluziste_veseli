@@ -6,4 +6,11 @@
     .operating_hours.one_container .one_section {
         gap: 5rem !important;
     }
+
+    .main_container .one_container .one_section .text_section {
+        order: 2;
+        width: 90%;
+        padding: 2rem;
+        margin-top: -50px;
+    }
 }

@@ -24,12 +24,11 @@
         height: 600px;
         overflow: hidden;
     }
-    .main_container .one_container .one_section .text_section {
+    /* .main_container .one_container .one_section .text_section {
         order: 2;
         width: 90%;
         padding: 2rem;
-        margin-top: -50px;
-    }
+    } */
     
     .main_container .one_container .one_section {
         flex-direction: column;

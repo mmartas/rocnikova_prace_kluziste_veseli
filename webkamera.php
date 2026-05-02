@@ -48,7 +48,17 @@
             <section class="webkamera one_container">
                 <h1 class="title text_color_gradient">Webkamera</h1>
                 <section class="one_section_webkamera">
-                    <iframe id="blockrandom" name="iframe" src="https://g0.ipcamlive.com/player/player.php?alias=65645d56307e4" width="100%" height="500px" scrolling="auto" frameborder="1" title="Web Kamera" class="box_glass_effect"></iframe>
+                    <div class="video_wrapper">
+                        <iframe
+                            id="blockrandom"
+                            name="iframe"
+                            src="https://g0.ipcamlive.com/player/player.php?alias=65645d56307e4"
+                            scrolling="auto"
+                            frameborder="1"
+                            title="Web Kamera"
+                            class="box_glass_effect">
+                        </iframe>
+                    </div>
                 </section>
             </section>
             <span class="decoration_red_line"></span>

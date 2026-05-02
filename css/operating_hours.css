@@ -1,3 +1,7 @@
+.main_container section:nth-of-type(3) {
+    text-align: center;
+}
+
 .operating_hours.one_container .one_section{
     gap: 2rem;
     align-items: start;

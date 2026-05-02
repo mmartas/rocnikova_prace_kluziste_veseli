@@ -2,10 +2,10 @@
     <div class="footer_container box_glass_effect">
         <section class="text_map_section">
             <nav class="left_section section">
+                <div class="footer_logo">
+                    <a href=""><img src="images/kluziste_v_centru_vetsi_logo.png" alt=""></a>
+                </div>
                 <ul>
-                    <li>
-                        <a href=""><img src="images/kluziste_v_centru_vetsi_logo.png" alt=""></a>
-                    </li>
                     <li>
                         <a href="operating_rules.php">Provozní řád</a>
                     </li>

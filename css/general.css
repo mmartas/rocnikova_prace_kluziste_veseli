@@ -244,3 +244,8 @@ section p a {
 section p a:hover {
     background-color: var(--red-color);
 }
+
+.no-scroll {
+  overflow: hidden;
+  padding-right: 15px;
+}

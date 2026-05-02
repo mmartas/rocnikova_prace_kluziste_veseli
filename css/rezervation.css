@@ -109,11 +109,6 @@
 /*
     objednací formulář - modal
 */
-.no-scroll {
-  overflow: hidden;
-  padding-right: 15px;
-}
-
 .modal_overlay {
     position: fixed;
     top: 0;
