@@ -12,11 +12,12 @@ hamMenuIcon.addEventListener("click", function(event){
         mainNavMenu.classList.add("box_glass_effect")
         document.body.classList.add('no-scroll');
         navBarContainer.classList.add("ham_active");
-
+        ArrowToScroll.classList.remove("active");
     } else {
         mainNavMenu.classList.remove("box_glass_effect")
         document.body.classList.remove('no-scroll');
         navBarContainer.classList.remove("ham_active");
+        ArrowToScroll.classList.add("active");
     }
 })
 

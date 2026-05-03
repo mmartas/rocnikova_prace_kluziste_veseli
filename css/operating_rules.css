@@ -12,3 +12,7 @@
 .operating_rules.one_container .text_section {
     width: 100% !important;
 }
+
+.main_container .operating_rules .one_section .text_section .wrapper ol {
+    padding: 0 1.5rem;
+}

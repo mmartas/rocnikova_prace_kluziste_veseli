@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="query/header-query.css">
     <link rel="stylesheet" href="query/footer-query.css">
     <link rel="stylesheet" href="query/general-query.css">
+    <link rel="stylesheet" href="query/partners-query.css">
     
     
     <title>Kluziště v centru | Sponzoři</title>
@@ -35,8 +36,13 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <h1 class="title reveal delay"><span class="underline_color_gradient">Hlavní partneři</span><br> kluziště v centru <br><span class="text_color_gradient">veselí nad moravou!</span></h1>
                     </div>
-                    <div class="photo_group one_section_right_side">
-                        <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
+                    <div class="photo_group one_section_right_side" id="titleCarousel">
+                        <img src="images/kluziste1.jpg" alt="" class="right_photo_clip active">
+                        <img src="images/kluziste2.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste3.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste4.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste5.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste6.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
             </section>
@@ -56,27 +62,27 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://agg.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/agg.jpg" alt="">
-                                    <h2 class="title">Agg</h2>
+                                    <h2 class="title">AGG</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://benezelenina.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/benezelenina.jpg" alt="">
-                                    <h2 class="title">Bene zelenina</h2>
+                                    <h2 class="title">Bene Zelenina</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.biogena.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/biogena.jpg" alt="">
@@ -86,47 +92,47 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.dogindock.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/dogindock1.jpg" alt="">
-                                    <h2 class="title">Dockindog</h2>
+                                    <h2 class="title">Dog in Dock</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.dogindock.cz/bistro" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/dogindogbistro.jpg" alt="">
-                                    <h2 class="title">Dogindog bistro</h2>
+                                    <h2 class="title">Bistro Dog in Dock</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.elektroinstalacehyl.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/elektrohyl.jpg" alt="">
-                                    <h2 class="title">Elektro hýl</h2>
+                                    <h2 class="title">Elektroinstalace Hýl</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.davidsedlar.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/elektrosedlar.jpg" alt="">
-                                    <h2 class="title">Elektro Sedlář</h2>
+                                    <h2 class="title">Elektroinstalace David Sedlář</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://elektrofafek.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/fafek.jpg" alt="">
@@ -136,17 +142,17 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.florstyl.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/florstyle.jpg" alt="">
-                                    <h2 class="title">Florstyle</h2>
+                                    <h2 class="title">Florstyl</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.inteza.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/inteza.jpg" alt="">
@@ -156,7 +162,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.koupelny-popelka.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/koupelnypopelka.jpg" alt="">
@@ -166,7 +172,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.kovokon.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/Kovokon.jpg" alt="">
@@ -176,7 +182,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="http://www.makuluku.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/makuluku.jpg" alt="">
@@ -186,7 +192,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.nakoledetem.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/nakoledetem.jpg" alt="">
@@ -196,27 +202,27 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.herminapenzion.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/penzionhermina.jpg" alt="">
-                                    <h2 class="title">Penzion Hermina</h2>
+                                    <h2 class="title">Penzion Hermína</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.pneuplus.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/pneuplus.jpg" alt="">
-                                    <h2 class="title">Pneuplus</h2>
+                                    <h2 class="title">Pneu Plus</h2>
                                 </div>
                             </div>
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://radiojih.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/radiojih.jpg" alt="">
@@ -226,7 +232,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.stavbyremina.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/stavbyremina.jpg" alt="">
@@ -236,7 +242,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.vanto.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/stavbyvanto.jpg" alt="">
@@ -246,7 +252,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.trigema.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/trigema.jpg" alt="">
@@ -256,7 +262,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.vesbyt.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/vesbyt.jpg" alt="">
@@ -266,7 +272,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.veseli-nad-moravou.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/veselinadmoravou.jpg" alt="">
@@ -276,7 +282,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.vesnet.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/vesnet.jpg" alt="">
@@ -286,7 +292,7 @@
                         </a>
                     </section>
                     <section class="partners">
-                        <a href="https://www.prostefitko.cz/uvod" target="_blank">
+                        <a href="https://www.zlomek.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
                                     <img src="images/partners/zlomek.jpg" alt="">

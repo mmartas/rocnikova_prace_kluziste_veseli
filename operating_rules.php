@@ -6,12 +6,12 @@
 
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
-    
     <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="query/header-query.css">
     <link rel="stylesheet" href="query/footer-query.css">
     <link rel="stylesheet" href="query/general-query.css">
+    <link rel="stylesheet" href="query/operating_rules-query.css">
     
     <link rel="stylesheet" href="css/operating_rules.css">
     
@@ -35,8 +35,13 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <h1 class="title reveal delay"><span class="underline_color_gradient">Provozní řád</span><br>kluziště v centru<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
                     </div>
-                    <div class="photo_group one_section_right_side">
-                        <img src="images/title_background_dark_800.jpg" alt="" class="right_photo_clip">
+                    <div class="photo_group one_section_right_side" id="titleCarousel">
+                        <img src="images/kluziste1.jpg" alt="" class="right_photo_clip active">
+                        <img src="images/kluziste2.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste3.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste4.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste5.jpg" alt="" class="right_photo_clip">
+                        <img src="images/kluziste6.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
             </section>
@@ -146,8 +151,8 @@
                             <p class="text">
                                 Město Veselí nad Moravou<br>
                                 Odbor správy majetku města<br>
-                                Tel.: [doplnit kontakt]<br>
-                                E-mail: [doplnit e-mail]
+                                Tel.: +450 254 896 547<br>
+                                E-mail: kluziste@veselinadmoravou.cz
                             </p>
                         </div>
                     </div>

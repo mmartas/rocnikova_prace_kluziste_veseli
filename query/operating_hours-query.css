@@ -13,4 +13,11 @@
         padding: 2rem;
         margin-top: -50px;
     }
+
+    .main_container .introduction.one_container .one_section .text_section {
+        order: 2;
+        width: 90%;
+        padding: 2rem;
+        margin-top: -230px;
+    }
 }
