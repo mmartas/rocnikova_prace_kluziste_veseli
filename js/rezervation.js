@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         allDaySlot: false,
 
-        events: "events.php",
+        events: "/events.php",
 
         // cursor pointer na políčka "možnost pronájmu"
         eventClassNames: function(arg) {
