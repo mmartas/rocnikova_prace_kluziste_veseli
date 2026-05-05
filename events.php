@@ -23,30 +23,29 @@ while ($row = $eventsRes->fetch_assoc()) {
 
     $isBooked = isset($booked[$row['start']]);
 
+    $color = "brown";
+
+    if ($isBooked) {
+        $color = "red";
+    } else {
+        if ($row["type"] == "rent") $color = "orange";
+        else if ($row["type"] == "public") $color = "blue";
+        else if ($row["type"] == "school") $color = "goldenrod";
+        else if ($row["type"] == "maintenance") $color = "gray";
+    }
+
     $events[] = [
         "id" => $row["id"],
-
         "title" => $isBooked
             ? "Obsazeno: " . $booked[$row['start']]
             : $row["title"],
-
         "start" => $row["start"],
         "end" => $row["end"],
-
         "extendedProps" => [
             "type" => $row["type"],
             "booked" => $isBooked
         ],
-
-        "color" => $isBooked
-            ? "red"
-            : match($row["type"] ?? null) {
-                "rent" => "orange",
-                "public" => "blue",
-                "school" => "goldenrod",
-                "maintenance" => "gray",
-                default => "brown"
-            }
+        "color" => $color
     ];
 }
 
