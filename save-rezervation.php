@@ -1,33 +1,82 @@
 <?php
 require "assets/db.php";
 
+header("Content-Type: application/json; charset=utf-8");
+
 $conn = getDb();
 
-$date = $_POST['date'];
+$date = $_POST["date"] ?? "";
+$name = $_POST["name"] ?? "";
+$surname = $_POST["surname"] ?? "";
+$email = $_POST["email"] ?? "";
+$phone = $_POST["phone"] ?? "";
+$note = $_POST["note"] ?? "";
 
-// kontrola
-$check = $conn->query("SELECT * FROM reservations WHERE date = '$date'");
+$date = str_replace("T", " ", $date);
 
-if ($check->num_rows > 0) {
-    echo json_encode(["success" => false]);
+if ($date === "" || $name === "" || $surname === "" || $email === "" || $phone === "") {
+    echo json_encode([
+        "success" => false,
+        "message" => "Chybí povinné údaje."
+    ]);
     exit;
 }
 
-//uložení
+$check = $conn->prepare("SELECT `id` FROM `reservations` WHERE `date` = ? LIMIT 1");
+
+if (!$check) {
+    echo json_encode([
+        "success" => false,
+        "message" => "Chyba prepare kontroly: " . $conn->error
+    ]);
+    exit;
+}
+
+$check->bind_param("s", $date);
+$check->execute();
+$check->store_result();
+
+if ($check->num_rows > 0) {
+    echo json_encode([
+        "success" => false,
+        "message" => "Tento termín už je obsazený."
+    ]);
+    exit;
+}
+
 $stmt = $conn->prepare("
-    INSERT INTO reservations (name, surname, email, phone, note, date) VALUES (?, ?, ?, ?, ?, ?)
+    INSERT INTO `reservations` 
+    (`name`, `surname`, `email`, `phone`, `note`, `date`)
+    VALUES (?, ?, ?, ?, ?, ?)
 ");
+
+if (!$stmt) {
+    echo json_encode([
+        "success" => false,
+        "message" => "Chyba prepare insertu: " . $conn->error
+    ]);
+    exit;
+}
 
 $stmt->bind_param(
     "ssssss",
-    $_POST['name'],
-    $_POST['surname'],
-    $_POST['email'],
-    $_POST['phone'],
-    $_POST['note'],
+    $name,
+    $surname,
+    $email,
+    $phone,
+    $note,
     $date
 );
 
-$stmt->execute();
+if (!$stmt->execute()) {
+    echo json_encode([
+        "success" => false,
+        "message" => "Chyba při ukládání rezervace: " . $stmt->error
+    ]);
+    exit;
+}
 
-echo json_encode(["success" => true]);
+echo json_encode([
+    "success" => true
+]);
+exit;

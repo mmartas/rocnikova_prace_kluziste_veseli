@@ -1,46 +1,72 @@
 <?php
-
 require "assets/db.php";
 
-header('Content-Type: application/json');
+header("Content-Type: application/json; charset=utf-8");
 
 $conn = getDb();
 
-// načti eventy
-$eventsRes = $conn->query("SELECT * FROM events");
+$eventsRes = $conn->query("
+    SELECT 
+        `id`, 
+        `title`, 
+        `start`, 
+        `end`, 
+        `type`
+    FROM `events`
+");
 
-// načti rezervace
-$reservationsRes = $conn->query("SELECT date, surname FROM reservations");
+if (!$eventsRes) {
+    echo json_encode([
+        "error" => "Chyba v dotazu na events",
+        "message" => $conn->error
+    ]);
+    exit;
+}
+
+$reservationsRes = $conn->query("
+    SELECT 
+        `date`, 
+        `surname`
+    FROM `reservations`
+");
 
 $booked = [];
-while ($row = $reservationsRes->fetch_assoc()) {
-    $booked[$row['date']] = $row['surname'];
+
+if ($reservationsRes) {
+    while ($row = $reservationsRes->fetch_assoc()) {
+        $booked[$row["date"]] = $row["surname"];
+    }
 }
 
 $events = [];
 
 while ($row = $eventsRes->fetch_assoc()) {
+    $eventStartDb = $row["start"];
+    $eventEndDb = $row["end"];
 
-    $isBooked = isset($booked[$row['start']]);
+    $isBooked = isset($booked[$eventStartDb]);
 
     $color = "brown";
 
     if ($isBooked) {
         $color = "red";
-    } else {
-        if ($row["type"] == "rent") $color = "orange";
-        else if ($row["type"] == "public") $color = "blue";
-        else if ($row["type"] == "school") $color = "goldenrod";
-        else if ($row["type"] == "maintenance") $color = "gray";
+    } elseif ($row["type"] === "rent") {
+        $color = "orange";
+    } elseif ($row["type"] === "public") {
+        $color = "blue";
+    } elseif ($row["type"] === "school") {
+        $color = "goldenrod";
+    } elseif ($row["type"] === "maintenance") {
+        $color = "gray";
     }
 
     $events[] = [
         "id" => $row["id"],
         "title" => $isBooked
-            ? "Obsazeno: " . $booked[$row['start']]
+            ? "Obsazeno: " . $booked[$eventStartDb]
             : $row["title"],
-        "start" => $row["start"],
-        "end" => $row["end"],
+        "start" => str_replace(" ", "T", $eventStartDb),
+        "end" => str_replace(" ", "T", $eventEndDb),
         "extendedProps" => [
             "type" => $row["type"],
             "booked" => $isBooked
@@ -50,6 +76,7 @@ while ($row = $eventsRes->fetch_assoc()) {
 }
 
 echo json_encode($events);
+exit;
 
 // vložení eventů do databáze
 /**
