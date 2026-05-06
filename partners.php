@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="images/favicon-ice-skates.png" type="image/x-icon">
 </head>
 <body>
-    <?php require "assets/header.php"; ?>
+    <?php require "includes/header.php"; ?>
     <main>
         <div class="main_container">
             <!-- ÚVOD -->
@@ -175,7 +175,7 @@
                         <a href="https://www.kovokon.cz/" target="_blank">
                             <div class="text_section box_glass_effect">
                                 <div class="wrapper">
-                                    <img src="images/partners/Kovokon.jpg" alt="">
+                                    <img src="images/partners/kovokon.jpg" alt="">
                                     <h2 class="title">Kovokon</h2>
                                 </div>
                             </div>
@@ -310,7 +310,7 @@
         </div>
     </main>
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
-    <?php require "assets/footer.php"; ?>
+    <?php require "includes/footer.php"; ?>
     <script src="js/header.js"></script>
     <script src="js/general.js"></script>
 </body>

@@ -32,7 +32,7 @@ function closeModal() {
 
 // uložení rezervace
 function sendReservation(data) {
-    return fetch("save-rezervation.php", {
+    return fetch("assets/save-rezervation.php", {
         method: "POST",
         body: data
     })

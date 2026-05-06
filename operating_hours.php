@@ -26,7 +26,7 @@
     <link rel="shortcut icon" href="images/favicon-ice-skates.png" type="image/x-icon">
 </head>
 <body>
-    <?php require "assets/header.php"; ?>
+    <?php require "includes/header.php"; ?>
     <main>
         <div class="main_container">
             <!-- ÚVOD -->
@@ -179,7 +179,7 @@
         </div>
     </main>
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
-    <?php require "assets/footer.php"; ?>
+    <?php require "includes/footer.php"; ?>
     <script src="js/header.js"></script>
     <script src="js/general.js"></script>
 </body>
