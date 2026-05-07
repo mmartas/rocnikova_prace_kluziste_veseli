@@ -1,16 +1,12 @@
-.wrapper {
+.main_container .operating_rules .one_section .text_section .wrapper {
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.operating_rules {
+.main_container .operating_rules {
     gap: 2rem !important;
-}
-
-.operating_rules.one_container .text_section {
-    width: 100% !important;
 }
 
 .main_container .operating_rules .one_section .text_section .wrapper ol {

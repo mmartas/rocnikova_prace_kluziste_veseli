@@ -48,7 +48,7 @@
                 <h1 class="title text_color_gradient">provozní doba ledové plochy</h1>
                 <div class="one_section">
                     <section class="working_days one_section">
-                        <div class="text_section box_glass_effect">
+                        <div class="text_section box_glass_effect full_width">
                             <div class="wrapper reveal">
                                 <h2 class="title text_color_gradient">pracovní dny</h2>
                                 <div class="blok text">
@@ -80,7 +80,7 @@
                     </section>
 
                     <section class="weekends one_section">
-                        <div class="text_section box_glass_effect">
+                        <div class="text_section box_glass_effect full_width">
                             <div class="wrapper reveal">
                                 <h2 class="title text_color_gradient">víkendy, svátky, prázdniny</h2>
                                 <div class="blok text">
@@ -139,7 +139,7 @@
                 <h1 class="title text_color_gradient">provozní doba ostatních služeb</h1>
                 <div class="one_section">
                     <section class="operating_hours_sharp_skating">
-                        <div class="text_section box_glass_effect">
+                        <div class="text_section box_glass_effect full_width">
                             <div class="wrapper reveal">
                                 <h2 class="title text_color_gradient">broušení bruslí</h2>
                                 <div class="blok text">
@@ -151,7 +151,7 @@
                     </section>
 
                     <section class="operating_hours_food_service">
-                        <div class="text_section box_glass_effect">
+                        <div class="text_section box_glass_effect full_width">
                             <div class="wrapper reveal">
                                 <h2 class=" title text_color_gradient">občerstvení</h2>
                                 <div class="blok text">
@@ -163,7 +163,7 @@
                     </section>
 
                     <section class="operating_hours_skate_rental">
-                        <div class="text_section box_glass_effect">
+                        <div class="text_section box_glass_effect full_width">
                             <div class="wrapper reveal">
                                 <h2 class="title text_color_gradient">půjčování bruslí</h2>
                                 <div class="blok text">

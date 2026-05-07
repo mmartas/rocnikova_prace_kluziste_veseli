@@ -6,7 +6,8 @@ function getDb() {
     $password = "Serverje123";
     $dbname = "if0_41823991_kalendar";
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    // $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli("localhost", "root", "", "kalendar");
 
     if ($conn->connect_error) {
         die("Chyba připojení k DB: " . $conn->connect_error);

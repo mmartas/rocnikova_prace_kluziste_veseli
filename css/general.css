@@ -5,6 +5,13 @@
     --red-color: #B91F33;
     --red-color-shadow-01: rgba(185, 31, 51, 0.2);
     --main-background: #242424;
+
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --dark-background-rgb: rgb(36, 36, 36);
+    --glass-background: rgba(36, 36, 36, 0.2);
+
+    --red-inner-shadow: inset -20px -20px 20px var(--red-color-shadow-01),
+                        inset 20px 20px 20px var(--red-color-shadow-01);
 }
 
 html {
@@ -25,16 +32,16 @@ body {
 }
 
 .box_glass_effect {
-    background: rgba(36, 36, 36, 0.2);
+    background: var(--glass-background);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--glass-border);
     border-radius: 30px;
     box-shadow: 0 4px 20px var(--white-color-shadow-01);
 }
 
 .box_glass_effect_red {
-    background: rgba(36, 36, 36, 0.2);
+    background: var(--glass-background);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--red-color);
@@ -80,9 +87,11 @@ body {
     object-fit: cover;
     object-position: center;
 }
+
 .right_photo_clip {
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
 }
+
 .left_photo_clip {
     clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
 }
@@ -123,10 +132,12 @@ body {
     opacity: 0;
     pointer-events: none;
 }
+
 #arrow_top_scroll.active {
     opacity: 1;
     pointer-events: auto;
 }
+
 #arrow_top_scroll:hover {
     background-color: var(--red-color);
 }
@@ -137,7 +148,6 @@ body {
     color: var(--white-color);
     width: 56px;
 }
-
 
 main {
     width: 100%;
@@ -156,6 +166,7 @@ main {
     align-items: center;
     gap: 6rem;
 }
+
 .main_container .one_container {
     text-align: center;
     display: flex;
@@ -164,6 +175,7 @@ main {
     gap: 5rem;
     width: 100%;
 }
+
 .main_container .one_container h1 {
     font-size: 50px;
 }
@@ -195,9 +207,11 @@ main {
     width: 34%;
     height: 600px;
 }
+
 #titleCarousel {
     position: relative;
 }
+
 #titleCarousel img{
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -208,7 +222,9 @@ main {
 .main_container .one_container .one_section .photo_group img{
     width: 800px;
     max-height: 600px;
+    object-fit: cover;
 }
+
 #titleCarousel img.active{
     opacity: 1;
 }
@@ -240,6 +256,7 @@ section p a {
     text-wrap: nowrap;
     transition: all 0.3s;
 }
+
 section p a:hover {
     background-color: var(--red-color);
 }
@@ -247,4 +264,14 @@ section p a:hover {
 .no-scroll {
   overflow: hidden;
   padding-right: 15px;
+}
+
+.link_white {
+    text-decoration: none;
+    color: var(--white-color);
+    transition: all 0.3s;
+}
+
+.full_width {
+    width: 100% !important;
 }

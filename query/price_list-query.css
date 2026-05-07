@@ -1,20 +1,11 @@
 @media (max-width: 942px){
-    .row {
+    .main_container .one_container .text_section .row {
         flex-direction: column;
         align-items: center;
         gap: 4rem;
     }
 
-    .wrapper {
+    .main_container .one_container .text_section .row .wrapper {
         width: 100%;
-    }
-}
-
-@media (max-width: 800px) {
-    .main_container .introduction.one_container .one_section .text_section {
-        order: 2;
-        width: 90%;
-        padding: 2rem;
-        margin-top: -230px;
     }
 }

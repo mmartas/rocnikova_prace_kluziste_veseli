@@ -16,10 +16,10 @@
         </div>
         <nav class="mainNavMenu">
             <ul>
-                <li><a href="price_list.php" class="<?= $currentPage == 'price_list.php' ? 'active' : '' ?>">ceník</a></li>
-                <li><a href="webkamera.php" class="<?= $currentPage == 'webkamera.php' ? 'active' : '' ?>">webkamera</a></li>
-                <li><a href="operating_hours.php" class="<?= $currentPage == 'operating_hours.php' ? 'active' : '' ?>">rozpis ledu/provozní doba</a></li>
-                <li><a href="rezervation.php" class="<?= $currentPage == 'rezervation.php' ? 'active' : '' ?> box_glass_effect_red">rezervace</a></li>
+                <li><a href="price_list.php" class="<?= $currentPage == 'price_list.php' ? 'active' : '' ?> link_white">ceník</a></li>
+                <li><a href="webkamera.php" class="<?= $currentPage == 'webkamera.php' ? 'active' : '' ?> link_white">webkamera</a></li>
+                <li><a href="operating_hours.php" class="<?= $currentPage == 'operating_hours.php' ? 'active' : '' ?> link_white">rozpis ledu/provozní doba</a></li>
+                <li><a href="rezervation.php" class="<?= $currentPage == 'rezervation.php' ? 'active' : '' ?> link_white box_glass_effect_red">rezervace</a></li>
             </ul>
         </nav>
     </div>

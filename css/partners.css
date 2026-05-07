@@ -1,4 +1,4 @@
-.main_partners .partners .wrapper {
+.main_container .one_container .one_section .partners .text_section .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,6 @@
 
 .main_partners.one_container .text_section:hover {
     transform: scale(1.025);
-    
     box-shadow: 0 4px 20px var(--red-color) !important;
     border: 1px solid var(--red-color);
 }
@@ -33,7 +32,6 @@
 .main_partners.one_container .partners_container.one_section h2 {
     display: inline-block;
     color: transparent;
-
     background-image: linear-gradient(
         to top,
         var(--red-color) 0%,
@@ -42,10 +40,8 @@
     );
     background-size: 100% 200%;
     background-position: 0 0;
-
     background-clip: text;
     -webkit-background-clip: text;
-
     transition: background-position 0.4s ease;
 }
 

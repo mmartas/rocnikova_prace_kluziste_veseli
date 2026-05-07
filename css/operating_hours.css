@@ -6,29 +6,20 @@
     gap: 2rem;
     align-items: start;
 }
+
 .operating_hours_next_services.one_container .one_section {
     flex-wrap: wrap;
 }
 
-.weekends.one_section .text_section, .working_days.one_section .text_section {
-    width: 100% !important;
-}
-
-
-.operating_hours_sharp_skating .text_section, .operating_hours_food_service .text_section, .operating_hours_skate_rental .text_section {
-    width: 100% !important;
-}
-
-.operating_hours .wrapper {
+.main_container .one_container .one_section .text_section .wrapper {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.operating_hours .wrapper .blok p:nth-of-type(2) {
+.main_container .one_container .one_section .text_section .wrapper .blok p:nth-of-type(2) {
   font-weight: bold;
 }
-
 
 .operating_hours_sharp_skating,
 .operating_hours_food_service {

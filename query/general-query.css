@@ -15,7 +15,14 @@
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 850px){
+    .main_container .introduction.one_container .one_section .text_section {
+        order: 2;
+        width: 90%;
+        padding: 2rem;
+        margin-top: -230px;
+    }
+
     .main_container .one_container .one_section .photo_group {
         width: 100%;
         display: flex;
@@ -24,11 +31,6 @@
         height: 600px;
         overflow: hidden;
     }
-    /* .main_container .one_container .one_section .text_section {
-        order: 2;
-        width: 90%;
-        padding: 2rem;
-    } */
     
     .main_container .one_container .one_section {
         flex-direction: column;

@@ -7,13 +7,13 @@
                 </div>
                 <ul>
                     <li>
-                        <a href="operating_rules.php">Provozní řád</a>
+                        <a href="operating_rules.php" class="link_white">Provozní řád</a>
                     </li>
                     <li>    
-                        <a href="https://www.veseli-nad-moravou.cz/" target="_blank">Město Veselí nad Moravou</a>
+                        <a href="https://www.veseli-nad-moravou.cz/" target="_blank" class="link_white">Město Veselí nad Moravou</a>
                     </li>
                     <li>
-                        <a href="partners.php">Naši partneři</a>
+                        <a href="partners.php" class="link_white">Naši partneři</a>
                     </li>
                 </ul>
             </nav>

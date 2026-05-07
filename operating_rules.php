@@ -50,7 +50,7 @@
             <section class="operating_rules one_container">
                 <h1 class="title text_color_gradient">provozní řád</h1>
                 <section class="one_section">
-                    <div class="text_section">
+                    <div class="text_section full_width">
                         <div class="wrapper">
                             <h2 class="title">1. účel zařízení</h2>
                             <p class="text">Kluziště je určeno veřejnosti k rekreačnímu bruslení a sportovnímu vyžití v zimním období. Cílem je zajistit bezpečný a příjemný pobyt všech návštěvníků.
