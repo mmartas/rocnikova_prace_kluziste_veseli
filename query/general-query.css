@@ -19,8 +19,12 @@
     .main_container .introduction.one_container .one_section .text_section {
         order: 2;
         width: 90%;
-        padding: 2rem;
+        padding: 1.5rem 1rem;
         margin-top: -230px;
+    }
+
+    .main_container .one_container .text_section h2 {
+        font-size: 30px;
     }
 
     .main_container .one_container .one_section .photo_group {
@@ -41,15 +45,28 @@
         height: 100%;
         width: 80%;
     }
+
+    .text {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 576px){
     .main_container .one_container h1,
     .main_container .one_container .one_section .text_section h1 {
-        font-size: 41px;
+        font-size: 30px;
     }
     .right_photo_clip, .left_photo_clip {
         width: 70%;
     }
+
+    .main_container {
+        gap: 4rem;
+    }
+
+    .main_container .one_container {
+        gap: 2rem;
+    }
+
 }
 

@@ -93,17 +93,26 @@ document.addEventListener('DOMContentLoaded', function () {
         dayHeaderContent: function(arg) {
 
             const date = arg.date;
+            const day = date.toLocaleDateString('cs-CZ', { weekday: 'short' });
+            const fullDate = date.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric' });
+            const dayDate = date.toLocaleDateString('cs-CZ', { day: 'numeric' });
 
             if (arg.view.type === "dayGridMonth") {
-                const day = date.toLocaleDateString('cs-CZ', { weekday: 'short' });
-
                 return {
                     html: `<span class="day-name">${day}</span>`
                 };
             }
 
-            const day = date.toLocaleDateString('cs-CZ', { weekday: 'short' });
-            const fullDate = date.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric' });
+            if (arg.view.type === "timeGridWeek" && window.innerWidth <= 430) {
+                return {
+                    html: `
+                        <div class="day-header">
+                            <span class="day-name">${day}</span>
+                            <span class="day-date">${dayDate}</span>
+                        </div>
+                    `
+                };
+            }
 
             return {
                 html: `
@@ -148,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 modalWindow.classList.add("wrong");
                 modalWindow.classList.remove("active");
 
-                errorMessage.textContent = "Došlo k chybě, obnovte stránku a zkuste to znovu. ";
+                errorMessage.textContent = "Došlo k chybě, obnovte stránku a zkuste to znovu.";
             }
         });
     });

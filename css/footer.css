@@ -11,7 +11,7 @@ footer {
 
 .footer_container {
     max-width: 1300px;
-    width: 100%;
+    width: calc(100% - 2rem);
     padding: 1rem;
     display: flex;
     flex-direction: column;

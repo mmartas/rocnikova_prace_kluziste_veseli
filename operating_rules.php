@@ -60,7 +60,7 @@
                 </section>
 
                 <section class="one_section">
-                    <div class="text_section">
+                    <div class="text_section full_width">
                         <div class="wrapper">
                             <h2 class="title">2. vstup na kluziště</h2>
                             <ol class="text">
@@ -74,7 +74,7 @@
                 </section>
 
                 <section class="one_section">
-                    <div class="text_section">
+                    <div class="text_section full_width">
                         <div class="wrapper">
                             <h2 class="title">3. povinnosti návštěvníků</h2>
                             <ol class="text">
@@ -89,7 +89,7 @@
                 </section>
 
                 <section class="one_section">
-                    <div class="text_section">
+                    <div class="text_section full_width">
                         <div class="wrapper">
                             <h2 class="title">4. je zakázáno:</h2>
                             <ol class="text">
@@ -105,7 +105,7 @@
                 </section>
 
                 <section class="one_section">
-                    <div class="text_section">
+                    <div class="text_section full_width">
                         <div class="wrapper">
                             <h2 class="title">5. odpovědnost a bezpečnost</h2>
                             <ol class="text">
@@ -119,7 +119,7 @@
                 </section>
 
                 <section class="one_section">
-                    <div class="text_section">
+                    <div class="text_section full_width">
                         <div class="wrapper">
                             <h2 class="title">6. údržba a technické přestávky</h2>
                             <ol class="text">
@@ -132,7 +132,7 @@
                 </section>
 
                 <section class="one_section">
-                    <div class="text_section">
+                    <div class="text_section full_width">
                         <div class="wrapper">
                             <h2 class="title">7. závěrečná ustanovení</h2>
                             <ol class="text">
@@ -145,7 +145,7 @@
                 </section>
 
                 <section class="one_section">
-                    <div class="text_section">
+                    <div class="text_section full_width">
                         <div class="wrapper">
                             <h2 class="title">provozovatel</h2>
                             <p class="text">

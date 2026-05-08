@@ -38,8 +38,4 @@
     .navbar_container nav ul li:last-child {
         padding: 0 1rem !important;
     }
-
-    .navbar_container.ham_active {
-        margin-right: 31px;
-    }
 }

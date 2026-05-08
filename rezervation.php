@@ -113,7 +113,7 @@
                         </div>
                     </div>
                     <button type="submit" class="text">Odeslat rezervaci</button>
-                    <p id="error_message"></p>
+                    <p id="error_message">Došlo k chybě, obnovte stránku a zkuste to znovu.</p>
                 </form>
             </div>
 

@@ -40,3 +40,13 @@
         margin-top: 0;
     }
 }
+
+@media (max-width: 576px){
+    footer {
+        margin-top: 4.5rem;
+    }
+    .footer_container .text_map_section .left_section ul,
+    .footer_container .text_map_section .section .contact a {
+        font-size: 18px;
+    }
+}
