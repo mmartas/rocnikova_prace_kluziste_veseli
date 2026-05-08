@@ -3,6 +3,11 @@ function openModal(start, end) {
     modal.style.display = "flex";
     document.body.classList.add("no-scroll");
 
+    document.querySelector(".rezervation_formular").style.display = "flex";
+    document.querySelector(".submit_message").style.display = "none";
+    document.getElementById("error_message").style.display = "none";
+    document.getElementById("rezervationForm").reset();
+
     const s = new Date(start);
     const e = new Date(end);
 

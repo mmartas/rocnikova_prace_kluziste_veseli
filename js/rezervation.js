@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         },
 
+        dayMaxEvents: 3,
+
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',
@@ -44,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
         height: 'auto',
         firstDay: 1,
 
+        
+
         slotMinTime: '06:00:00',
         slotMaxTime: '23:00:00',
 
@@ -51,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         slotLabelInterval: '01:00',
 
         allDaySlot: false,
+        moreLinkText: 'další',
 
         events: "assets/events.php",
 

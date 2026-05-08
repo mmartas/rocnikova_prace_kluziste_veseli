@@ -51,7 +51,7 @@ while ($row = $eventsRes->fetch_assoc()) {
     if ($isBooked) {
         $color = "red";
     } elseif ($row["type"] === "rent") {
-        $color = "orange";
+        $color = "green";
     } elseif ($row["type"] === "public") {
         $color = "blue";
     } elseif ($row["type"] === "school") {
