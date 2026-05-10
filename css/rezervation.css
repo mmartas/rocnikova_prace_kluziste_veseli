@@ -113,6 +113,12 @@
     background: transparent !important;
 }
 
+/* malý modálek při kliknutí na "+ 3 další" */
+.fc .fc-popover,
+.fc .fc-popover * {
+    color: black;
+}
+
 /*
     objednací formulář - modal
 */

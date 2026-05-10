@@ -53,10 +53,10 @@
                             <h2 class="title text_color_gradient">veřejné bruslení</h2>
                             <p class="text">
                                 děti do 6 let:<br>zdarma<br>
-                                mládež 7-15 let: <br>XX Kč<br>
-                                mládež 7-15 let(karta občana): <br>XX Kč<br>
-                                dospělý od 16 let: <br>XX Kč<br>
-                                dospělý od 16 let(karta občana): <br>XX Kč<br>
+                                mládež 7-15 let: <br>20 Kč<br>
+                                mládež 7-15 let(karta občana): <br>15 Kč<br>
+                                dospělý od 16 let: <br>30 Kč<br>
+                                dospělý od 16 let(karta občana): <br>25 Kč<br>
                             </p>
                         </div>
                         <div class="wrapper reveal">
@@ -110,6 +110,7 @@
     
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
     <?php require "includes/footer.php"; ?>
+    <script src="js/function.js"></script>
     <script src="js/header.js"></script>
     <script src="js/general.js"></script>
 </body>

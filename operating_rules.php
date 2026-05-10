@@ -164,6 +164,7 @@
     </main>
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
     <?php require "includes/footer.php"; ?>
+    <script src="js/function.js"></script>
     <script src="js/header.js"></script>
     <script src="js/general.js"></script>
 </body>

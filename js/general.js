@@ -7,11 +7,8 @@ window.addEventListener("scroll", function(event){
         ArrowToScroll.classList.remove("active")
     }
 });
-ArrowToScroll.addEventListener("click", function(event){
-    (document.scrollingElement || document.documentElement).scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+ArrowToScroll.addEventListener("click", function(){
+    smoothScrollToTop(700);
 });
 
 // plynulé zobrazení textu při scrollu

@@ -54,3 +54,24 @@ function getFormData() {
         date: document.getElementById("selectedDate").textContent
     };
 }
+
+// plynulé srollování nahoru
+function smoothScrollToTop(duration) {
+    const startPosition = window.scrollY;
+    const startTime = performance.now();
+
+    function animation(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+
+        const ease = 1 - Math.pow(1 - progress, 3);
+
+        window.scrollTo(0, startPosition * (1 - ease));
+
+        if (progress < 1) {
+            requestAnimationFrame(animation);
+        }
+    }
+
+    requestAnimationFrame(animation);
+}
