@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/webkamera.css">
-    
-    <link rel="stylesheet" href="css/footer.css">
+    <?php include "assets/config.php"; ?>
 
-    <link rel="stylesheet" href="query/header-query.css">
-    <link rel="stylesheet" href="query/footer-query.css">
-    <link rel="stylesheet" href="query/webkamera-query.css">
-    <link rel="stylesheet" href="query/general-query.css">
+    <link rel="stylesheet" href="css/general.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="css/header.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="css/webkamera.css?v=<?= $version ?>">
+
+    <link rel="stylesheet" href="css/footer.css?v=<?= $version ?>">
+
+    <link rel="stylesheet" href="query/header-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="query/footer-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="query/webkamera-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="query/general-query.css?v=<?= $version ?>">
     
     <title>Kluziště v centru | Webkamera</title>
 
@@ -67,8 +69,8 @@
 
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
     <?php require "includes/footer.php"; ?>
-    <script src="js/function.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/general.js"></script>
+    <script src="js/function.js?v=<?= $version ?>"></script>
+    <script src="js/header.js?v=<?= $version ?>"></script>
+    <script src="js/general.js?v=<?= $version ?>"></script>
 </body>
 </html>

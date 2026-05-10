@@ -119,6 +119,13 @@
     color: black;
 }
 
+.fc .fc-popover-header {
+    background-color: #bcbaba;
+}
+.fc .fc-popover-body {
+    background-color: #ddd9d9;
+}
+
 /*
     objednací formulář - modal
 */
