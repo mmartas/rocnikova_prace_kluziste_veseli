@@ -3,17 +3,17 @@
         <section class="text_map_section">
             <nav class="left_section section">
                 <div class="footer_logo">
-                    <a href=""><img src="images/kluziste_v_centru_vetsi_logo.png" alt=""></a>
+                    <a href="index.php"><img src="images/kluziste_v_centru_vetsi_logo.png" alt=""></a>
                 </div>
                 <ul>
                     <li>
-                        <a href="operating_rules.php" class="link_white">Provozní řád</a>
+                        <a href="pages/operating_rules.php" class="link_white">Provozní řád</a>
                     </li>
                     <li>    
                         <a href="https://www.veseli-nad-moravou.cz/" target="_blank" class="link_white">Město Veselí nad Moravou</a>
                     </li>
                     <li>
-                        <a href="partners.php" class="link_white">Naši partneři</a>
+                        <a href="pages/partners.php" class="link_white">Naši partneři</a>
                     </li>
                 </ul>
             </nav>

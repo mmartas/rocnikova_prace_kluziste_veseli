@@ -57,7 +57,7 @@
                             <h2 class="title text_color_gradient">bruslení pro veřejnost</h2>
                             <p class="text">Přijďte si zabruslit na naše městské kluziště a užít si příjemnou atmosféru na ledě. Veřejné bruslení je určeno pro děti, dospělé i seniory – ať už jste začátečník nebo zkušený bruslař. Ledová plocha je pravidelně upravována, takže se můžete těšit na kvalitní a bezpečný povrch. K dispozici je šatna, i hrazdičky pro děti.
 
-                            Aktuální rozpis veřejného bruslení najdete <a href="operating_hours.php" class="box_glass_effect_red">zde.</a> Stačí si vzít brusle (nebo si je půjčit u nás) a dorazit – o zbytek se postaráme my.
+                            Aktuální rozpis veřejného bruslení najdete <a href="pages/operating_hours.php" class="box_glass_effect_red">zde.</a> Stačí si vzít brusle (nebo si je půjčit u nás) a dorazit – o zbytek se postaráme my.
                             </p>
                         </div>
                     </div>
@@ -106,9 +106,7 @@
                     <div class="text_section box_glass_effect one_section_left_side">
                         <div class="wrapper reveal">
                             <h2 class="title text_color_gradient">broušení bruslí</h2>
-                            <p class="text">Aby byla jízda na ledě bezpečná a pohodlná, nabízíme broušení bruslí přímo na místě. Ostré brusle zajistí lepší stabilitu, kontrolu a celkový zážitek z bruslení.
-
-                            Službu je možné využít v <a href="operating_hours.php">tuto</a> dobu. Doporučujeme nechat si brusle nabrousit pravidelně, zejména pokud cítíte zhoršenou přilnavost na ledě.
+                            <p class="text">Aby byla jízda na ledě bezpečná a pohodlná, nabízíme broušení bruslí přímo na místě. Ostré brusle zajistí lepší stabilitu, kontrolu a celkový zážitek z bruslení. Doporučujeme nechat si brusle nabrousit pravidelně, zejména pokud cítíte zhoršenou přilnavost na ledě.
                             </p>
                         </div>
                     </div>
