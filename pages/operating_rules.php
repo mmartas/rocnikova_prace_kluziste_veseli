@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <?php include "assets/config.php"; ?>
+    <?php include "../assets/config.php"; ?>
     
-    <link rel="stylesheet" href="css/general.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="css/header.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="css/footer.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../css/general.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../css/header.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../css/footer.css?v=<?= $version ?>">
 
-    <link rel="stylesheet" href="query/header-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="query/footer-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="query/general-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="query/operating_rules-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../query/header-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../query/footer-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../query/general-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../query/operating_rules-query.css?v=<?= $version ?>">
 
-    <link rel="stylesheet" href="css/operating_rules.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../css/operating_rules.css?v=<?= $version ?>">
 
     <title>Kluziště v centru | Provozní řád</title>
 
@@ -25,10 +25,10 @@
 
     <script src="https://kit.fontawesome.com/9e0a62895a.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="images/favicon-ice-skates.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon-ice-skates.png" type="image/x-icon">
 </head>
 <body>
-    <?php require "includes/header.php"; ?>
+    <?php require "../includes/header.php"; ?>
     <main>
         <div class="main_container">
             <!-- ÚVOD -->
@@ -38,12 +38,12 @@
                         <h1 class="title reveal delay"><span class="underline_color_gradient">Provozní řád</span><br>kluziště v centru<br><span class="text_color_gradient">veselí nad moravou!</span></h1>
                     </div>
                     <div class="photo_group one_section_right_side" id="titleCarousel">
-                        <img src="images/kluziste1.jpg" alt="" class="right_photo_clip active">
-                        <img src="images/kluziste2.jpg" alt="" class="right_photo_clip">
-                        <img src="images/kluziste3.jpg" alt="" class="right_photo_clip">
-                        <img src="images/kluziste4.jpg" alt="" class="right_photo_clip">
-                        <img src="images/kluziste5.jpg" alt="" class="right_photo_clip">
-                        <img src="images/kluziste6.jpg" alt="" class="right_photo_clip">
+                        <img src="../images/kluziste1.jpg" alt="" class="right_photo_clip active">
+                        <img src="../images/kluziste2.jpg" alt="" class="right_photo_clip">
+                        <img src="../images/kluziste3.jpg" alt="" class="right_photo_clip">
+                        <img src="../images/kluziste4.jpg" alt="" class="right_photo_clip">
+                        <img src="../images/kluziste5.jpg" alt="" class="right_photo_clip">
+                        <img src="../images/kluziste6.jpg" alt="" class="right_photo_clip">
                     </div>
                 </section>
             </section>
@@ -165,9 +165,9 @@
         </div>
     </main>
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
-    <?php require "includes/footer.php"; ?>
-    <script src="js/function.js?v=<?= $version ?>"></script>
-    <script src="js/header.js?v=<?= $version ?>"></script>
-    <script src="js/general.js?v=<?= $version ?>"></script>
+    <?php require "../includes/footer.php"; ?>
+    <script src="../js/function.js?v=<?= $version ?>"></script>
+    <script src="../js/header.js?v=<?= $version ?>"></script>
+    <script src="../js/general.js?v=<?= $version ?>"></script>
 </body>
 </html>
