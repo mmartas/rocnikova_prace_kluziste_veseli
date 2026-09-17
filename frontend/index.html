@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <?php include "assets/config.php"; ?>
+ 
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
     
-    <link rel="stylesheet" href="css/general.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="css/header.css?v=<?= $version ?>">
-    
-    <link rel="stylesheet" href="css/footer.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="css/footer.css">
 
-    <link rel="stylesheet" href="query/header-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="query/index-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="query/footer-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="query/general-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="query/header-query.css">
+    <link rel="stylesheet" href="query/index-query.css">
+    <link rel="stylesheet" href="query/footer-query.css">
+    <link rel="stylesheet" href="query/general-query.css">
 
     
     <title>Kluziště v centru | Veselí nad Moravou</title>
@@ -28,7 +26,7 @@
     <link rel="shortcut icon" href="images/favicon-ice-skates.png" type="image/x-icon">
 </head>
 <body>
-    <?php require "includes/header.php"; ?>
+    <header id="header-placeholder"></header>
     <main>
         <div class="main_container">
             <!-- ÚVOD -->
@@ -57,7 +55,7 @@
                             <h2 class="title text_color_gradient">bruslení pro veřejnost</h2>
                             <p class="text">Přijďte si zabruslit na naše městské kluziště a užít si příjemnou atmosféru na ledě. Veřejné bruslení je určeno pro děti, dospělé i seniory – ať už jste začátečník nebo zkušený bruslař. Ledová plocha je pravidelně upravována, takže se můžete těšit na kvalitní a bezpečný povrch. K dispozici je šatna, i hrazdičky pro děti.
 
-                            Aktuální rozpis veřejného bruslení najdete <a href="../pages/operating_hours.php" class="box_glass_effect_red">zde.</a> Stačí si vzít brusle (nebo si je půjčit u nás) a dorazit – o zbytek se postaráme my.
+                            Aktuální rozpis veřejného bruslení najdete <a href="pages/operating_hours.html" class="box_glass_effect_red">zde.</a> Stačí si vzít brusle (nebo si je půjčit u nás) a dorazit – o zbytek se postaráme my.
                             </p>
                         </div>
                     </div>
@@ -164,10 +162,11 @@
             <span class="decoration_red_line"></span>
         </div>
     </main>
+    <footer id="footer-placeholder"></footer>
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
-    <?php require "includes/footer.php"; ?>
-    <script src="js/function.js?v=<?= $version ?>"></script>
-    <script src="js/header.js?v=<?= $version ?>"></script>
-    <script src="js/general.js?v=<?= $version ?>"></script>
+    
+    <script src="js/function.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/general.js"></script>
 </body>
 </html>

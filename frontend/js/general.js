@@ -34,3 +34,7 @@ setInterval(() => {
     index = (index + 1) % images.length;
     images[index].classList.add("active");
 }, 2500);
+
+
+
+

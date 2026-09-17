@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <?php include "../assets/config.php"; ?>
     
-    <link rel="stylesheet" href="../css/general.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="../css/header.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="../css/footer.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
-    <link rel="stylesheet" href="../query/header-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="../query/footer-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="../query/general-query.css?v=<?= $version ?>">
-    <link rel="stylesheet" href="../query/operating_hours-query.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../query/header-query.css">
+    <link rel="stylesheet" href="../query/footer-query.css">
+    <link rel="stylesheet" href="../query/general-query.css">
+    <link rel="stylesheet" href="../query/operating_hours-query.css">
 
-    <link rel="stylesheet" href="../css/operating_hours.css?v=<?= $version ?>">
+    <link rel="stylesheet" href="../css/operating_hours.css">
     
     <title>Kluziště v centru | Rozpis ledu</title>
 
@@ -28,7 +26,7 @@
     <link rel="shortcut icon" href="../images/favicon-ice-skates.png" type="image/x-icon">
 </head>
 <body>
-    <?php require "../includes/header.php"; ?>
+    <header id="header-placeholder"></header>
     <main>
         <div class="main_container">
             <!-- ÚVOD -->
@@ -132,7 +130,7 @@
                 
             </section>
             <section>
-                <p class="text">Provozní doba se<span> může lišit </span>v závislosti na poptávce, počasí a dalších faktorech ovlivňující provoz kluziště, proto <a href="rezervation.php" class="box_glass_effect_red">sledujte především aktuální rozpis ledu!</a></p>
+                <p class="text">Provozní doba se<span> může lišit </span>v závislosti na poptávce, počasí a dalších faktorech ovlivňující provoz kluziště, proto <a href="rezervation.html" class="box_glass_effect_red">sledujte především aktuální rozpis ledu!</a></p>
             </section>
             <span class="decoration_red_line"></span>
 
@@ -180,10 +178,11 @@
             <span class="decoration_red_line"></span>
         </div>
     </main>
+    <footer id="footer-placeholder"></footer>
     <button class="box_glass_effect_red" id="arrow_top_scroll" type="button"><i class="fa-solid fa-angles-up"></i></button>
-    <?php require "../includes/footer.php"; ?>
-    <script src="../js/function.js?v=<?= $version ?>"></script>
-    <script src="../js/header.js?v=<?= $version ?>"></script>
-    <script src="../js/general.js?v=<?= $version ?>"></script>
+    
+    <script src="../js/function.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/general.js"></script>
 </body>
 </html>
