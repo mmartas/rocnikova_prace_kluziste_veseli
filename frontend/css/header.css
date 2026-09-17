@@ -45,7 +45,6 @@ header {
 
 .navbar_container .ham_menu {
     display: none;
-    /* display: flex; */
     flex-direction: column;
     gap: 5px;
     padding-left: 1rem;
