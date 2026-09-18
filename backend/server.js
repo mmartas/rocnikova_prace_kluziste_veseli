@@ -20,8 +20,8 @@ const pool = mysql.createPool({
 // 1. API Endpoint pro FullCalendar (vrátí události z databáze)
 app.get('/api/events', async (req, res) => {
     try {
-        // Vybereme rezervace z databáze (uprav tabulku a sloupce podle své DB)
-        const [rows] = await pool.query("SELECT id, title, start, end FROM events");
+        // Vybereme události z databáze (uprav tabulku a sloupce podle své DB)
+        const [rows] = await pool.query("SELECT id, title, start, end, type FROM events");
         res.json(rows); // Pošleme data FullCalendaru jako JSON
     } catch (err) {
         console.error("Chyba při načítání událostí:", err);

@@ -85,10 +85,26 @@
 }
 
 /* eventy */
-.rent-event {
-    cursor: pointer;
+.event-rent-available {
+    cursor: pointer !important;
+    background-color: green !important;
 }
-
+.event-rent-booked {
+    background-color: red !important;
+    cursor: default !important;
+}
+.event-public {
+    background-color: #FED403 !important;
+}
+.event-booked {
+    background-color: red !important;
+}
+.event-maintenance {
+    background-color: gray !important;
+}
+.event-school {
+    background-color: lightblue !important;
+}
 /* víkend */
 .fc-day-sat, 
 .fc-day-sun {

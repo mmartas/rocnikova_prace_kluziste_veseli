@@ -64,8 +64,25 @@ document.addEventListener('DOMContentLoaded', function () {
             const type = arg.event.extendedProps.type;
             const booked = arg.event.extendedProps.booked;
 
+            if(type === 'rent') {
+                if(!booked) {
+                    return ['event-rent-available'];
+                } else {
+                    return ['event-rent-booked'];
+                }
+                return ['event-rent'];
+            } else if (type === 'public') {
+                return ['event-public'];
+            } else if (type === 'booked') {
+                return ['event-booked'];
+            } else if (type === 'maintenance') {
+                return ['event-maintenance'];
+            } else if (type === 'school') {
+                return ['event-school'];
+            }
+
             if (type === "rent" && !booked) {
-                return ["rent-event"];
+                return ['event-rent'];
             }
             return [];
         },
