@@ -18,12 +18,14 @@ const pool = mysql.createPool({
 });
 
 // 1. API Endpoint pro FullCalendar (vrátí události z databáze)
+
 app.get('/api/events', async (req, res) => {
     try {
         // Pomocí LEFT JOIN zjistíme, jestli už k eventu existuje rezervace
         const query = `
             SELECT e.id, e.title, e.start, e.end, e.type, 
-            IF(r.id IS NOT NULL, 1, 0) AS booked
+            IF(r.id IS NOT NULL, 1, 0) AS booked,
+            r.surname AS client_surname
             FROM events e
             LEFT JOIN reservations r ON e.id = r.event_id
         `;
@@ -32,12 +34,13 @@ app.get('/api/events', async (req, res) => {
         // FullCalendar očekává pole objektů, kde booked pošleme v extendedProps
         const formattedRows = rows.map(row => ({
             id: row.id,
-            title: row.booked ? "Obsazeno" : row.title, // Pokud je obsazeno, změníme text na "Obsazeno"
+            title: row.booked ? `Obsazeno: ${row.client_surname}` : row.title, // Pokud je obsazeno, změníme text na "Obsazeno"
             start: row.start,
             end: row.end,
             extendedProps: {
                 type: row.type,
-                booked: row.booked === 1 // True/False pro snadné rozhodování na frontendu
+                booked: row.booked === 1, // True/False pro snadné rozhodování na frontendu
+                client_surname: row.client_surname
             }
         }));
 
@@ -50,13 +53,14 @@ app.get('/api/events', async (req, res) => {
 
 
 app.post('/api/reservations', async (req, res) => {
+    console.log("Přijatá data z frontendu:", req.body); // Přidáno pro debugování
     try {
-        const { event_id, name, email } = req.body;
+        const { event_id, name, surname, email, phone, note, date } = req.body;
 
         // Vložíme novou rezervaci do databáze
         await pool.query(
-            "INSERT INTO reservations (event_id, name, email) VALUES (?, ?, ?)",
-            [event_id, name, email]
+            "INSERT INTO reservations (event_id, name, surname, email, phone, note, date) VALUES (?, ?, ?, ?, ?, ?, ?)",
+            [event_id, name, surname, email, phone, note, date]
         );
 
         res.json({ success: true, message: "Rezervace byla úspěšně vytvořena!" });

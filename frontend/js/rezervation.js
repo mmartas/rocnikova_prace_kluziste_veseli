@@ -148,13 +148,59 @@ document.addEventListener('DOMContentLoaded', function () {
     // formulář
     document.getElementById("rezervationForm").addEventListener("submit", function(e) {
         e.preventDefault();
+
+        // 1. Získáme hodnotu z telefonu a odstraníme z ní mezery
+        const phoneValue = document.getElementById("clientTel").value.replace(/\D/g, "");
+
+        // 2. Ověříme, jestli má přesně 9 čísel
+        if (phoneValue.length !== 9) {
+            // Zastavíme odeslání formuláře
+            e.preventDefault();
+            
+            // Upozorníme uživatele
+            alert("Telefonní číslo musí obsahovat přesně 9 čísel!");
+            
+            // Vrátíme kurzor do políčka pro telefon
+            document.getElementById("clientTel").focus();
+            return;
+        }
+
+        const emailInput = document.getElementById("clientEmail").value.trim();
+
+        // Regulární výraz pro ověření platného e-mailu
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(emailInput)) {
+            alert("Zadejte platnou e-mailovou adresu (např. jan@email.cz)!");
+            e.preventDefault(); // Zastaví odeslání formuláře
+            document.getElementById("clientEmail").focus();
+            return;
+        }
+
+        const nameInput = document.getElementById("clientName").value.trim();
+        const surnameInput = document.getElementById("clientSurname").value.trim();
+
+        // Regulární výraz pro ověření, že řetězec obsahuje pouze písmena a mezery
+        const nameRegex = /^[a-zA-ZáčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ\s]{2,}$/;
+
+        if (!nameRegex.test(nameInput) || !nameRegex.test(surnameInput)) {
+            e.preventDefault();
+            alert("Jméno a příjmení musí obsahovat pouze platná písmena (minimálně 2 znaky)!");
+            return;
+        }
         
         // 1. Získáme data z formuláře
         const formData = {
             event_id: window.selectedEventId, // Přibalíme ID vybraného eventu z kalendáře
             name: document.getElementById("clientName").value,     // Uprav si podle reálných ID tvých inputů ve formuláři
-            email: document.getElementById("clientEmail").value    // Uprav si podle reálných ID tvých inputů ve formuláři
+            surname: document.getElementById("clientSurname").value, // Uprav si podle reálných ID tvých inputů ve formuláři
+            email: document.getElementById("clientEmail").value,    // Uprav si podle reálných ID tvých inputů ve formuláři
+            phone: document.getElementById("clientTel").value,    // Uprav si podle reálných ID tvých inputů ve formuláři
+            date: document.getElementById("selectedDateInput").value,    // Uprav
+            note: document.getElementById("clientNotes").value    // Uprav
         };
+
+        console.log("Odesílám data:", formData); // Pro kontrolu, co se odesílá
 
         // 2. Pošleme data přes fetch na náš nový POST endpoint do server.js
         fetch('http://localhost:3000/api/reservations', {
@@ -171,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 messageSide.style.display = "flex";
 
                 messageContent.innerHTML = `
-                    <p><strong>Jméno:</strong> ${formData.name}</p>
+                    <p><strong>Jméno a příjmení:</strong> ${formData.name} ${formData.surname}</p>
                     <p><strong>Email:</strong> ${formData.email}</p>
                 `;
 
@@ -229,3 +275,45 @@ function handleReservationSubmit(eventData) {
     })
     .catch(error => console.error('Chyba:', error));
 }
+
+// konfigurace vyplnění telefonního čísla s mezerami po 3 číslech
+const phoneInput = document.getElementById("clientTel");
+
+phoneInput.addEventListener("input", function (e) {
+    // 1. Odstraní všechno, co není číslo
+    let cleaned = e.target.value.replace(/\D/g, "");
+
+    // 2. Omezení na maximálně 9 čísel
+    if (cleaned.length > 9) {
+        cleaned = cleaned.substring(0, 9);
+    }
+
+    // 3. Formátování po třech číslech (např. 123 456 789)
+    let formatted = "";
+    if (cleaned.length > 0) {
+        formatted = cleaned.substring(0, 3);
+    }
+    if (cleaned.length > 3) {
+        formatted += " " + cleaned.substring(3, 6);
+    }
+    if (cleaned.length > 6) {
+        formatted += " " + cleaned.substring(6, 9);
+    }
+
+    // 4. Vrácení naformátovaného textu zpět do inputu
+    e.target.value = formatted;
+});
+
+// Pro pole jména (a stejně tak můžeš použít pro příjmení)
+const nameInput = document.getElementById("clientName");
+const surnameInput = document.getElementById("clientSurname");
+
+nameInput.addEventListener("input", function(e) {
+    // Povolí pouze písmena (včetně české diakritiky) a mezery
+    e.target.value = e.target.value.replace(/[^a-zA-ZáčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ\s]/g, "");
+});
+
+surnameInput.addEventListener("input", function(e) {
+    // Povolí pouze písmena (včetně české diakritiky) a mezery
+    e.target.value = e.target.value.replace(/[^a-zA-ZáčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ\s]/g, "");
+});
