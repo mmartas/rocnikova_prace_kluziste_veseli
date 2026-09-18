@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     return ['event-rent-booked'];
                 }
-                return ['event-rent'];
             } else if (type === 'public') {
                 return ['event-public'];
             } else if (type === 'booked') {
@@ -81,9 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 return ['event-school'];
             }
 
-            if (type === "rent" && !booked) {
-                return ['event-rent'];
-            }
             return [];
         },
 
@@ -96,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
+            window.selectedEventId = info.event.id; // Uložíme ID vybraného eventu do globální proměnné
             openModal(info.event.startStr, info.event.endStr);
         },
 
@@ -152,36 +149,45 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("rezervationForm").addEventListener("submit", function(e) {
         e.preventDefault();
         
-        const data = new FormData(this);
+        // 1. Získáme data z formuláře
+        const formData = {
+            event_id: window.selectedEventId, // Přibalíme ID vybraného eventu z kalendáře
+            name: document.getElementById("clientName").value,     // Uprav si podle reálných ID tvých inputů ve formuláři
+            email: document.getElementById("clientEmail").value    // Uprav si podle reálných ID tvých inputů ve formuláři
+        };
 
-        sendReservation(data)
+        // 2. Pošleme data přes fetch na náš nový POST endpoint do server.js
+        fetch('http://localhost:3000/api/reservations', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
         .then(res => {
             if (res.success) {
                 formSide.style.display = "none";
-
-                const formValues = getFormData();
-
                 messageSide.style.display = "flex";
 
                 messageContent.innerHTML = `
-                    <p><strong>Jméno:</strong> ${formValues.name} ${formValues.surname}</p>
-                    <p><strong>Email:</strong> ${formValues.email}</p>
-                    <p><strong>Termín:</strong> ${formValues.date}</p>
+                    <p><strong>Jméno:</strong> ${formData.name}</p>
+                    <p><strong>Email:</strong> ${formData.email}</p>
                 `;
 
                 modalWindow.classList.add("active");
                 modalWindow.classList.remove("wrong");
                 
-                calendar.refetchEvents();
+                // Klíčový krok: Přinutí FullCalendar znova stáhnout data a překreslit slot na červeno ("Obsazeno")
+                calendar.refetchEvents(); 
             } else {
                 errorMessage.style.display = "flex";
-
                 modalWindow.classList.add("wrong");
                 modalWindow.classList.remove("active");
-
                 errorMessage.textContent = "Došlo k chybě, obnovte stránku a zkuste to znovu.";
             }
-        });
+        })
+        .catch(error => console.error('Chyba:', error));
     });
 
     if(modal.style.display != "flex"){
@@ -198,3 +204,28 @@ document.addEventListener('DOMContentLoaded', function () {
         if (e.key === "Escape") closeModal();
     });
 });
+
+
+// Příklad funkce, která se zavolá po odeslání tvého modálního formuláře:
+function handleReservationSubmit(eventData) {
+    fetch('http://localhost:3000/api/reservations', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData) // např. { event_id, name, email }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // 1. Zavřeme modal
+            closeModal();
+            
+            // 2. Klíčový krok: Přinutíme FullCalendar znova stáhnout data z backendu!
+            calendar.refetchEvents(); 
+        } else {
+            alert("Chyba: " . data.error);
+        }
+    })
+    .catch(error => console.error('Chyba:', error));
+}
